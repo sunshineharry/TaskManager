@@ -88,7 +88,7 @@ void TM_run(void)
 			// 当到时间了，运行任务
 			task_list[PID]->task_fun();
 			// 无限任务无限循环
-			if (task_list[PID]->remain_count != RUN_FOREVER)
+			if (task_list[PID]->remain_count == RUN_FOREVER)
 			{
 				// 更新下一次任务时间
 				task_list[PID]->start_time = systime + task_list[PID]->period;

@@ -1,0 +1,28 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.associations": {
+            "*.nse": "lua",
+            ".eideignore": "ignore",
+            "stm32f10x_conf.h": "c",
+            "user.h": "c",
+            "stm32f10x_adc.h": "c",
+            "stm32f10x.h": "c",
+            "smarttimer.h": "c",
+            "beep.h": "c",
+            "led.h": "c",
+            "taskmanager.h": "c",
+            "taskmanager.hpp": "c",
+            "systime.h": "c",
+            "taskmanager_config.h": "c"
+        },
+        "C_Cpp.default.intelliSenseMode": "gcc-arm",
+        "files.autoGuessEncoding": true,
+        "C_Cpp.default.cppStandard": "c++14",
+        "C_Cpp.default.cStandard": "c99"
+    }
+}

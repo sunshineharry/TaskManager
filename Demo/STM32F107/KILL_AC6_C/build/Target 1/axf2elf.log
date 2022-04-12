@@ -1,0 +1,5 @@
+arm-none-eabi-objcopy --update-section ER_IROM1="c:\Users\Harry\Desktop\TaskManager\Demo\STM32F107\KILL_AC6_C\build\Target 1\Template_EIDE.bin" "c:\Users\Harry\Desktop\TaskManager\Demo\STM32F107\KILL_AC6_C\build\Target 1\Template_EIDE.axf" "c:\Users\Harry\Desktop\TaskManager\Demo\STM32F107\KILL_AC6_C\build\Target 1\Template_EIDE.elf"
+
+
+WARNING: The runtime version supported by this application is unavailable.
+Using default runtime: v4.0.30319
