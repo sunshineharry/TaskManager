@@ -1,4 +1,0 @@
-﻿  ConsoleApplication1.cpp
-c:\users\harry\desktop\consoleapplication1\consoleapplication1\consoleapplication1.cpp(30): error C3867: “MyClass::task1”: 非标准语法；请使用 "&" 来创建指向成员的指针
-c:\users\harry\desktop\consoleapplication1\consoleapplication1\consoleapplication1.cpp(30): error C2440: “初始化”: 无法从“int”转换为“void (__cdecl *)(void)”
-  c:\users\harry\desktop\consoleapplication1\consoleapplication1\consoleapplication1.cpp(30): note: 从整型强制转换为指针类型要求 reinterpret_cast、C 样式强制转换或函数样式强制转换

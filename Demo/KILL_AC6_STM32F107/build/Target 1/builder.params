@@ -1,0 +1,107 @@
+{
+    "name": "Template_EIDE",
+    "target": "Target 1",
+    "toolchain": "AC6",
+    "showRepathOnLog": true,
+    "threadNum": 18,
+    "rootDir": "c:\\Users\\Harry\\Desktop\\TaskManager\\Demo\\KILL_AC6_STM32F107",
+    "dumpPath": ".eide\\log",
+    "outDir": "build\\Target 1",
+    "ram": 65536,
+    "rom": 262144,
+    "incDirs": [
+        "Libraries/STM32F10x_StdPeriph_Driver/inc",
+        "Libraries/CMSIS/CM3/CoreSupport",
+        "user/inc",
+        "Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x",
+        ".eide/deps",
+        "Libraries/smarttimer",
+        "Middleware/TaskManager",
+        ".eide/deps",
+        "user/src"
+    ],
+    "libDirs": [],
+    "defines": [
+        "USE_STDPERIPH_DRIVER",
+        "STM32F10X_CL"
+    ],
+    "sourceList": [
+        "Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/arm/startup_stm32f10x_cl.s",
+        "Libraries/STM32F10x_StdPeriph_Driver/src/misc.c",
+        "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_adc.c",
+        "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_bkp.c",
+        "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_can.c",
+        "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_cec.c",
+        "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_crc.c",
+        "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dac.c",
+        "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dbgmcu.c",
+        "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_dma.c",
+        "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_exti.c",
+        "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_flash.c",
+        "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_fsmc.c",
+        "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_gpio.c",
+        "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_i2c.c",
+        "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_iwdg.c",
+        "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_pwr.c",
+        "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rcc.c",
+        "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_rtc.c",
+        "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_sdio.c",
+        "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_spi.c",
+        "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_tim.c",
+        "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_usart.c",
+        "Libraries/STM32F10x_StdPeriph_Driver/src/stm32f10x_wwdg.c",
+        "Middleware/TaskManager/systime.c",
+        "Middleware/TaskManager/taskmanager.cpp",
+        "user/src/LED.c",
+        "user/src/beep.c",
+        "user/src/main.cpp",
+        "user/src/stm32f10x_it.c",
+        "user/system_stm32f10x.c"
+    ],
+    "sourceParams": {},
+    "sourceParamsMtime": 1649404596000,
+    "options": {
+        "version": 3,
+        "beforeBuildTasks": [],
+        "afterBuildTasks": [
+            {
+                "name": "axf to elf",
+                "command": "mono \"${BuilderFolder}\\utils\\axf2elf.exe\" -d \"C:\\Portable\\Keil\\ARM\\ARMCLANG\" -b \"${outDir}\\Template_EIDE.bin\" -i \"${outDir}\\Template_EIDE.axf\" -o \"${outDir}\\Template_EIDE.elf\" > \"${outDir}\\axf2elf.log\""
+            }
+        ],
+        "global": {
+            "output-debug-info": "enable",
+            "microcontroller-cpu": "cortex-m3",
+            "microcontroller-fpu": "cortex-m3",
+            "microcontroller-float": "cortex-m3",
+            "target": "cortex-m3"
+        },
+        "c/cpp-compiler": {
+            "optimization": "level-0",
+            "language-c": "c99",
+            "language-cpp": "c++11",
+            "link-time-optimization": true,
+            "warnings": "ac5-like-warnings"
+        },
+        "asm-compiler": {
+            "$use": "asm"
+        },
+        "linker": {
+            "output-format": "elf",
+            "misc-controls": "--diag_suppress=L6329",
+            "link-time-optimization": true,
+            "link-scatter": [
+                "\"c:/Users/Harry/Desktop/TaskManager/Demo/KILL_AC6_STM32F107/build/Target 1/Template_EIDE.sct\""
+            ]
+        }
+    },
+    "sha": {
+        "c/cpp-defines": "e26e4661639fa0033ae5ed07411f5f28",
+        "beforeBuildTasks": "d751713988987e9331980363e24189ce",
+        "afterBuildTasks": "a5c46dc3ba2b33d62b2b9f5ea282d051",
+        "global": "c1da6cf42395b5773b2fd23d03e0be91",
+        "c/cpp-compiler": "b9c3b675927710fb0f58ef4f4f140280",
+        "asm-compiler": "41ada285171eb44cc747ea97210ce555",
+        "linker": "b5443501fd716dac19f97b803b0b17ee"
+    }
+}

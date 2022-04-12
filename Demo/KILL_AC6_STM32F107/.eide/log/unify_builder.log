@@ -1,0 +1,1081 @@
+[2022-04-08 15:56:37]	[done]
+	build successfully !
+
+[2022-04-08 16:08:15]	[done]
+	build successfully !
+
+[2022-04-08 16:37:19]	compilation failed at : "c:\Users\dantong\Desktop\zuoye7\user\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+".\user\src\main.c", line 1: Error:  #5: cannot open source input file "user.h": No such file or directory
+  #include "user.h"
+                   ^
+.\user\src\main.c: 0 warnings, 1 error
+
+[2022-04-08 18:32:47]	compilation failed at : "c:\Users\dantong\Desktop\zuoye7\user\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+".\user\src\main.c", line 2: Error:  #5: cannot open source input file "timer.h": No such file or directory
+  #include "timer.h"
+                    ^
+.\user\src\main.c: 0 warnings, 1 error
+
+[2022-04-08 18:33:11]	compilation failed at : "c:\Users\dantong\Desktop\zuoye7\user\src\user.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+".\user\src\user.c", line 9: Error:  #29: expected an expression
+      GPIO_InitStructure.GPIO_Pin = GPIO_Pin_1 | GPIO_Pin_2 | GPIO_Pin_3 | GPIO_Pin_4 |;
+                                                                                       ^
+".\user\src\user.c", line 18: Error:  #20: identifier "m_nDelayNum" is undefined
+      switch (m_nDelayNum)
+              ^
+".\user\src\user.c", line 28: Warning:  #111-D: statement is unreachable
+           GPIO_ResetBits(GPIOC,GPIO_Pin_1|GPIO_Pin_2|GPIO_Pin_4);
+           ^
+".\user\src\user.c", line 31: Warning:  #111-D: statement is unreachable
+           GPIO_ResetBits(GPIOC,GPIO_Pin_1|GPIO_Pin_2|GPIO_Pin_3);
+           ^
+.\user\src\user.c: 2 warnings, 2 errors
+
+[2022-04-08 18:34:54]	compilation failed at : "c:\Users\dantong\Desktop\zuoye7\user\src\user.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+".\user\src\user.c", line 10: Error:  #29: expected an expression
+      GPIO_InitStructure.GPIO_Pin = GPIO_Pin_1 | GPIO_Pin_2 | GPIO_Pin_3 | GPIO_Pin_4 |;
+                                                                                       ^
+".\user\src\user.c", line 29: Warning:  #111-D: statement is unreachable
+           GPIO_ResetBits(GPIOC,GPIO_Pin_1|GPIO_Pin_2|GPIO_Pin_4);
+           ^
+".\user\src\user.c", line 32: Warning:  #111-D: statement is unreachable
+           GPIO_ResetBits(GPIOC,GPIO_Pin_1|GPIO_Pin_2|GPIO_Pin_3);
+           ^
+.\user\src\user.c: 2 warnings, 1 error
+
+[2022-04-08 18:35:01]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+Error: L6218E: Undefined symbol TIM2_Init (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-04-08 18:36:14]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+Error: L6218E: Undefined symbol TIM2_Init (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-04-08 18:45:54]	compilation failed at : "c:\Users\dantong\Desktop\zuoye7\user\src\timer.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+".\user\src\timer.c", line 22: Error:  #167: argument of type "uint16_t" is incompatible with parameter of type "TIM_TimeBaseInitTypeDef *"
+      TIM_TimeBaseInit(TIM2,TIM_IT_Update);
+                            ^
+".\user\src\timer.c", line 16: Warning:  #550-D: variable "TIM_TimeBaseStructure"  was set but never used
+      TIM_TimeBaseInitTypeDef TIM_TimeBaseStructure;
+                              ^
+.\user\src\timer.c: 1 warning, 1 error
+
+[2022-04-08 18:48:05]	[done]
+	build successfully !
+
+[2022-04-08 19:18:22]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+Error: L6200E: Symbol m_nDelayNum multiply defined (by stm32f10x_it.o and delay.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 1 error messages.
+
+
+[2022-04-08 19:19:17]	[done]
+	build successfully !
+
+[2022-04-08 19:20:28]	[done]
+	build successfully !
+
+[2022-04-08 19:20:55]	[done]
+	build successfully !
+
+[2022-04-08 19:22:14]	[done]
+	build successfully !
+
+[2022-04-08 19:25:08]	[done]
+	build successfully !
+
+[2022-04-08 19:27:26]	[done]
+	build successfully !
+
+[2022-04-08 21:26:21]	[done]
+	build successfully !
+
+[2022-04-08 21:28:18]	[done]
+	build successfully !
+
+[2022-04-08 21:53:06]	[done]
+	build successfully !
+
+[2022-04-08 21:53:46]	[done]
+	build successfully !
+
+[2022-04-08 21:57:23]	[done]
+	build successfully !
+
+[2022-04-09 18:43:38]	[done]
+	build successfully !
+
+[2022-04-09 18:50:46]	[done]
+	build successfully !
+
+[2022-04-09 18:56:19]	compilation failed at : "c:\Users\dantong\Desktop\zuoye7\user\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+".\user\src\main.c", line 10: Error:  #65: expected a ";"
+  	while(1)
+  	^
+".\user\src\main.c", line 14: Warning:  #12-D: parsing restarts here after previous syntax error
+  }
+  ^
+.\user\src\main.c: 1 warning, 1 error
+
+[2022-04-09 18:56:27]	compilation failed at : "c:\Users\dantong\Desktop\zuoye7\user\src\user.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+".\user\src\user.c", line 3: Error:  #5: cannot open source input file "timer.h": No such file or directory
+  #include "timer.h"
+                    ^
+.\user\src\user.c: 0 warnings, 1 error
+
+[2022-04-09 18:56:48]	compilation failed at : "c:\Users\dantong\Desktop\zuoye7\user\src\user.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+".\user\src\user.c", line 18: Error:  #260-D: explicit type is missing ("int" assumed)
+      static m_nDelayNum = 0;
+             ^
+.\user\src\user.c: 0 warnings, 1 error
+
+[2022-04-09 18:56:58]	[done]
+	build successfully !
+
+[2022-04-09 19:06:07]	[done]
+	build successfully !
+
+[2022-04-09 19:10:57]	[done]
+	build successfully !
+
+[2022-04-09 19:12:21]	[done]
+	build successfully !
+
+[2022-04-09 19:17:55]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+Error: L6218E: Undefined symbol Beep_init (referred from main.o).
+Error: L6218E: Undefined symbol Beep_run (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+
+
+[2022-04-09 19:18:57]	compilation failed at : "c:\Users\dantong\Desktop\zuoye7\user\src\beep.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+".\user\src\beep.c", line 18: Error:  #147-D: declaration is incompatible with "void Beep_run(int32_t)"  (declared at line 3 of ".\user\inc\beep.h")
+  void Beep_run(void)
+       ^
+.\user\src\beep.c: 0 warnings, 1 error
+
+[2022-04-09 19:19:15]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+Error: L6218E: Undefined symbol Beep_init (referred from main.o).
+Error: L6218E: Undefined symbol LED_Init (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+
+
+[2022-04-09 19:19:43]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+Error: L6218E: Undefined symbol Beep_init (referred from main.o).
+Error: L6218E: Undefined symbol LED_Init (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+
+
+[2022-04-09 19:20:11]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+Error: L6218E: Undefined symbol Beep_init (referred from main.o).
+Error: L6218E: Undefined symbol LED_Init (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+
+
+[2022-04-09 19:20:39]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+Error: L6218E: Undefined symbol LED_Init (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-04-09 19:22:02]	[done]
+	build successfully !
+
+[2022-04-09 19:23:18]	[done]
+	build successfully !
+
+[2022-04-09 19:24:37]	[done]
+	build successfully !
+
+[2022-04-09 19:28:29]	[done]
+	build successfully !
+
+[2022-04-09 19:30:29]	[done]
+	build successfully !
+
+[2022-04-09 19:56:04]	compilation failed at : "c:\Users\dantong\Desktop\zuoye7\user\src\LED.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+".\user\src\LED.c", line 44: Error:  #20: identifier "stim_s" is undefined
+      stim_s
+      ^
+".\user\src\LED.c", line 45: Error:  #65: expected a ";"
+  }
+  ^
+.\user\src\LED.c: 0 warnings, 2 errors
+
+[2022-04-09 20:00:26]	[done]
+	build successfully !
+
+[2022-04-09 20:01:00]	compilation failed at : "c:\Users\dantong\Desktop\zuoye7\user\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+".\user\src\main.c", line 12: Error:  #20: identifier "LED_run" is undefined
+  	stim_loop(2000,LED_run,STIM_LOOP_FOREVER);
+  	               ^
+.\user\src\main.c: 0 warnings, 1 error
+
+[2022-04-09 20:01:24]	[done]
+	build successfully !
+
+[2022-04-09 20:01:37]	[done]
+	build successfully !
+
+[2022-04-09 20:02:04]	[done]
+	build successfully !
+
+[2022-04-09 20:02:24]	[done]
+	build successfully !
+
+[2022-04-09 20:03:16]	[done]
+	build successfully !
+
+[2022-04-09 20:03:51]	[done]
+	build successfully !
+
+[2022-04-09 20:14:34]	[done]
+	build successfully !
+
+[2022-04-09 20:15:52]	[done]
+	build successfully !
+
+[2022-04-09 20:26:57]	[done]
+	build successfully !
+
+[2022-04-09 20:27:42]	[done]
+	build successfully !
+
+[2022-04-09 20:32:47]	compilation failed at : "c:\Users\dantong\Desktop\zuoye7\user\src\LED.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+".\user\src\LED.c", line 21: Error:  #260-D: explicit type is missing ("int" assumed)
+      static LED_num = 0;
+             ^
+".\user\src\LED.c", line 50: Error:  #20: identifier "i" is undefined
+      for(i=0;i<2000/period[num];i++)
+          ^
+.\user\src\LED.c: 0 warnings, 2 errors
+
+[2022-04-09 20:32:53]	compilation failed at : "c:\Users\dantong\Desktop\zuoye7\user\src\LED.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+".\user\src\LED.c", line 21: Error:  #260-D: explicit type is missing ("int" assumed)
+      static LED_num = 0;
+             ^
+.\user\src\LED.c: 0 warnings, 1 error
+
+[2022-04-09 20:33:00]	[done]
+	build successfully !
+
+[2022-04-09 20:33:39]	[done]
+	build successfully !
+
+[2022-04-09 20:34:31]	[done]
+	build successfully !
+
+[2022-04-09 20:35:15]	[done]
+	build successfully !
+
+[2022-04-09 20:35:23]	[done]
+	build successfully !
+
+[2022-04-09 20:35:55]	[done]
+	build successfully !
+
+[2022-04-09 20:43:59]	[done]
+	build successfully !
+
+[2022-04-09 20:44:45]	[done]
+	build successfully !
+
+[2022-04-09 20:45:43]	[done]
+	build successfully !
+
+[2022-04-09 20:47:52]	[done]
+	build successfully !
+
+[2022-04-09 20:48:18]	[done]
+	build successfully !
+
+[2022-04-09 20:49:11]	[done]
+	build successfully !
+
+[2022-04-09 20:50:06]	[done]
+	build successfully !
+
+[2022-04-09 20:50:36]	[done]
+	build successfully !
+
+[2022-04-09 20:50:51]	[done]
+	build successfully !
+
+[2022-04-09 20:51:37]	[done]
+	build successfully !
+
+[2022-04-09 21:08:37]	compilation failed at : "c:\Users\dantong\Desktop\zuoye71\user\src\LED.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+".\user\src\LED.c", line 3: Error:  #5: cannot open source input file "smarttimer.h": No such file or directory
+  #include "smarttimer.h"
+                         ^
+.\user\src\LED.c: 0 warnings, 1 error
+
+[2022-04-09 21:52:02]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+Error: L6218E: Undefined symbol get_syscycle (referred from beep.o).
+Error: L6218E: Undefined symbol get_systime (referred from beep.o).
+Error: L6218E: Undefined symbol stim_init (referred from main.o).
+Error: L6218E: Undefined symbol update_systime (referred from stm32f10x_it.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 4 error messages.
+
+
+[2022-04-09 21:52:25]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+Error: L6218E: Undefined symbol get_syscycle (referred from beep.o).
+Error: L6218E: Undefined symbol get_systime (referred from beep.o).
+Error: L6218E: Undefined symbol update_systime (referred from stm32f10x_it.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 3 error messages.
+
+
+[2022-04-09 21:52:47]	[done]
+	build successfully !
+
+[2022-04-09 21:54:06]	compilation failed at : "c:\Users\dantong\Desktop\zuoye71\user\src\beep.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+".\user\src\beep.c", line 28: Error:  #18: expected a ")"
+      if((uint8_t(get_systime()/sound_period))%2==0)
+                  ^
+".\user\src\beep.c", line 28: Error:  #29: expected an expression
+      if((uint8_t(get_systime()/sound_period))%2==0)
+                                              ^
+.\user\src\beep.c: 0 warnings, 2 errors
+
+[2022-04-09 21:54:27]	[done]
+	build successfully !
+
+[2022-04-09 21:54:59]	[done]
+	build successfully !
+
+[2022-04-09 21:59:59]	[done]
+	build successfully !
+
+[2022-04-09 22:30:06]	[done]
+	build successfully !
+
+[2022-04-09 22:30:25]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+Error: L6218E: Undefined symbol Flash_Led (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-04-09 22:30:48]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+Error: L6218E: Undefined symbol Flash_Led (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-04-09 22:31:33]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+Error: L6218E: Undefined symbol Flash_Led (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-04-09 22:32:07]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+Error: L6218E: Undefined symbol Flash_Led (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-04-09 22:33:31]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+Error: L6218E: Undefined symbol Flash_Led (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-04-09 22:35:06]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+Error: L6218E: Undefined symbol Flash_Led (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-04-09 22:37:22]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+Error: L6218E: Undefined symbol Flash_Led (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-04-09 22:38:07]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+Error: L6218E: Undefined symbol Flash_Led (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-04-09 22:38:34]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+Error: L6218E: Undefined symbol Flash_Led (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-04-09 22:39:18]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+Error: L6218E: Undefined symbol flash_Led (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-04-09 22:39:31]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+Error: L6218E: Undefined symbol flash_Led (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-04-09 22:40:17]	[done]
+	build successfully !
+
+[2022-04-10 11:22:10]	[done]
+	build successfully !
+
+[2022-04-10 11:22:19]	[done]
+	build successfully !
+
+[2022-04-10 11:25:16]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+Error: L6218E: Undefined symbol beep_cycle (referred from main.o).
+Error: L6218E: Undefined symbol Beep_Init (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+
+
+[2022-04-10 11:25:49]	[done]
+	build successfully !
+
+[2022-04-10 11:26:11]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+Error: L6218E: Undefined symbol beep_cycle (referred from main.o).
+Error: L6218E: Undefined symbol Beep_Init (referred from main.o).
+Error: L6218E: Undefined symbol get_syscycle() (referred from beep.o).
+Error: L6218E: Undefined symbol get_systime() (referred from beep.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 4 error messages.
+
+
+[2022-04-10 11:27:40]	compilation failed at : "c:\Users\dantong\Desktop\finalJHK_2\user\src\main.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+./user/src/main.c:3:10: fatal error: 'beep.h' file not found
+#include "beep.h"
+         ^~~~~~~~
+1 error generated.
+
+[2022-04-10 11:27:51]	compilation failed at : "c:\Users\dantong\Desktop\finalJHK_2\user\src\beep.cpp", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+./user/src/beep.cpp:1:10: fatal error: 'beep.h' file not found
+#include "beep.h"
+         ^~~~~~~~
+1 error generated.
+
+[2022-04-10 11:27:59]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+Error: L6218E: Undefined symbol get_syscycle() (referred from beep.o).
+Error: L6218E: Undefined symbol get_systime() (referred from beep.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+
+
+[2022-04-10 11:30:47]	compilation failed at : "c:\Users\dantong\Desktop\finalJHK_2\user\src\LED.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+In file included from ./user/src/LED.c:3:
+./user/inc\taskmanager.h:11:8: error: expected identifier or '('
+extern "C"
+       ^
+./user/inc\taskmanager.h:21:2: error: #endif without #if
+#endif
+ ^
+2 errors generated.
+
+[2022-04-10 11:31:40]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+Error: L6218E: Undefined symbol get_syscycle() (referred from beep.o).
+Error: L6218E: Undefined symbol get_systime() (referred from beep.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+
+
+[2022-04-10 11:32:02]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+Error: L6218E: Undefined symbol get_syscycle() (referred from beep.o).
+Error: L6218E: Undefined symbol get_systime() (referred from beep.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 2 error messages.
+
+
+[2022-04-10 11:33:20]	[done]
+	build successfully !
+
+[2022-04-10 11:46:56]	[done]
+	build successfully !
+
+[2022-04-10 11:48:49]	[done]
+	build successfully !
+
+[2022-04-10 11:48:59]	[done]
+	build successfully !
+
+[2022-04-10 11:56:37]	[done]
+	build successfully !
+
+[2022-04-10 11:56:46]	[done]
+	build successfully !
+
+[2022-04-10 11:57:56]	[done]
+	build successfully !
+
+[2022-04-10 14:22:03]	[done]
+	build successfully !
+
+[2022-04-10 14:26:37]	[done]
+	build successfully !
+
+[2022-04-10 15:33:27]	[done]
+	build successfully !
+
+[2022-04-10 15:33:36]	[done]
+	build successfully !
+
+[2022-04-10 15:42:56]	[done]
+	build successfully !
+
+[2022-04-10 15:43:50]	[done]
+	build successfully !
+
+[2022-04-10 15:44:35]	[done]
+	build successfully !
+
+[2022-04-10 15:45:10]	[done]
+	build successfully !
+
+[2022-04-10 15:46:26]	[done]
+	build successfully !
+
+[2022-04-10 15:49:08]	[done]
+	build successfully !
+
+[2022-04-10 15:49:46]	[done]
+	build successfully !
+
+[2022-04-10 15:51:13]	[done]
+	build successfully !
+
+[2022-04-10 15:56:07]	compilation failed at : "c:\Users\dantong\Desktop\finalJHK_2\user\src\taskmanager.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+./user/src/taskmanager.c:21:10: error: conflicting types for 'get_syscycle'
+uint32_t get_syscycle(void)
+         ^
+./user/inc\taskmanager.h:14:9: note: previous declaration is here
+uint8_t get_syscycle(void);
+        ^
+1 error generated.
+
+[2022-04-10 15:56:28]	compilation failed at : "c:\Users\dantong\Desktop\finalJHK_2\user\src\LED.cpp", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <5ad0758a213a4017a4a43a71c811e836>:0 
+---
+./user/src/LED.cpp:17:11: error: out-of-line definition of 'bright' does not match any declaration in 'LED'
+void LED::bright(uint32_t LED_num)
+          ^~~~~~
+1 error generated.
+
+[2022-04-10 15:57:01]	[done]
+	build successfully !
+
+[2022-04-10 16:00:58]	[done]
+	build successfully !
+
+[2022-04-10 16:16:20]	[done]
+	build successfully !
+
+[2022-04-10 16:24:52]	[done]
+	build successfully !
+
+[2022-04-10 16:25:05]	[done]
+	build successfully !
+
+[2022-04-10 16:34:18]	[done]
+	build successfully !
+
+[2022-04-10 16:34:37]	[done]
+	build successfully !
+
+[2022-04-10 16:34:55]	[done]
+	build successfully !
+
+[2022-04-10 16:36:22]	[done]
+	build successfully !
+
+[2022-04-10 16:36:35]	[done]
+	build successfully !
+
+[2022-04-10 16:36:53]	[done]
+	build successfully !
+
+[2022-04-10 16:39:47]	[done]
+	build successfully !
+
+[2022-04-11 22:29:36]	[done]
+	build successfully !
+
+[2022-04-11 22:32:07]	compilation failed at : "c:\Users\Harry\Desktop\ex01_final_cpp_AC6_C99_CPP11\Middleware\TaskManager\systime.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <82200d7cd0cf4a279c5fb9fc299a656f>:0 
+---
+./Middleware/TaskManager/systime.c:1:10: fatal error: 'systime.h' file not found
+#include "systime.h"
+         ^~~~~~~~~~~
+1 error generated.
+
+[2022-04-11 22:33:14]	compilation failed at : "c:\Users\Harry\Desktop\ex01_final_cpp_AC6_C99_CPP11\Middleware\TaskManager\systime.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <82200d7cd0cf4a279c5fb9fc299a656f>:0 
+---
+In file included from ./Middleware/TaskManager/systime.c:1:
+./Middleware/TaskManager/systime.h:3:26: error: expected ';' after top level declarator
+void update_systime(void)
+                         ^
+                         ;
+1 error generated.
+
+[2022-04-11 22:33:26]	compilation failed at : "c:\Users\Harry\Desktop\ex01_final_cpp_AC6_C99_CPP11\user\src\LED.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <82200d7cd0cf4a279c5fb9fc299a656f>:0 
+---
+./user/src/LED.c:3:10: fatal error: 'taskmanager.h' file not found
+#include "taskmanager.h"
+         ^~~~~~~~~~~~~~~
+1 error generated.
+
+[2022-04-11 22:33:36]	compilation failed at : "c:\Users\Harry\Desktop\ex01_final_cpp_AC6_C99_CPP11\user\src\LED.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <82200d7cd0cf4a279c5fb9fc299a656f>:0 
+---
+In file included from ./user/src/LED.c:3:
+./Middleware/TaskManager\taskmanager.hpp:2:10: fatal error: 'list' file not found
+#include <list>
+         ^~~~~~
+1 error generated.
+
+[2022-04-11 22:34:58]	compilation failed at : "c:\Users\Harry\Desktop\ex01_final_cpp_AC6_C99_CPP11\user\src\stm32f10x_it.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <82200d7cd0cf4a279c5fb9fc299a656f>:0 
+---
+./user/src/stm32f10x_it.c:27:10: fatal error: 'taskmanager.h' file not found
+#include "taskmanager.h"
+         ^~~~~~~~~~~~~~~
+1 error generated.
+
+[2022-04-11 22:35:25]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <82200d7cd0cf4a279c5fb9fc299a656f>:0 
+---
+Error: L6218E: Undefined symbol get_syscycle (referred from LED.o).
+Error: L6218E: Undefined symbol get_systime() (referred from taskmanager.o).
+Error: L6218E: Undefined symbol Beep_Init() (referred from main.o).
+Error: L6218E: Undefined symbol flash_LED() (referred from main.o).
+Error: L6218E: Undefined symbol beep_cycle() (referred from main.o).
+Error: L6218E: Undefined symbol LED_Init() (referred from main.o).
+Error: L6218E: Undefined symbol wmemcpy (referred from ios.cpp.o).
+Error: L6218E: Undefined symbol __ARM_snprintf (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol __ARM_vasprintf (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol __ARM_vsnprintf (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol __ARM_vsscanf (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol _mbsnrtowcs (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol _wcsnrtombs (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol btowc (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswalpha (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswblank (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswcntrl (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswdigit (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswlower (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswprint (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswpunct (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswspace (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswupper (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswxdigit (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol mbrlen (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol mbsrtowcs (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol mbtowc (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol towlower (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol towupper (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol wcscoll (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol wcsxfrm (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol wctob (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol wmemset (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol swprintf (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wcslen (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wcstol (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wcstoll (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wcstoul (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wcstoull (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wmemchr (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wmemcmp (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wmemmove (referred from string.cpp.o).
+Error: L6218E: Undefined symbol __wcstod_int (referred from wcstod.o).
+Error: L6218E: Undefined symbol __wcstof_int (referred from wcstof.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 44 error messages.
+
+
+[2022-04-11 22:44:51]	compilation failed at : "c:\Users\Harry\Desktop\ex01_final_cpp_AC6_C99_CPP11\user\src\main.cpp", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <82200d7cd0cf4a279c5fb9fc299a656f>:0 
+---
+./user/src/main.cpp:11:5: error: no matching constructor for initialization of 'tasks_msg' (aka 's_tasks_msg')
+    tasks_msg(beep_cycle,START_NOW,2000,RUN_FOREVER);
+    ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Middleware/TaskManager\taskmanager.hpp:15:16: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 4 were provided
+typedef struct s_tasks_msg
+               ^
+./Middleware/TaskManager\taskmanager.hpp:15:16: note: candidate constructor (the implicit move constructor) not viable: requires 1 argument, but 4 were provided
+./Middleware/TaskManager\taskmanager.hpp:15:16: note: candidate constructor (the implicit default constructor) not viable: requires 0 arguments, but 4 were provided
+1 error generated.
+
+[2022-04-11 22:45:39]	compilation failed at : "c:\Users\Harry\Desktop\ex01_final_cpp_AC6_C99_CPP11\user\src\main.cpp", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <82200d7cd0cf4a279c5fb9fc299a656f>:0 
+---
+./user/src/main.cpp:11:5: error: no matching constructor for initialization of 'tasks_msg' (aka 's_tasks_msg')
+    tasks_msg(beep_cycle,START_NOW,2000,RUN_FOREVER);
+    ^         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./Middleware/TaskManager\taskmanager.hpp:15:16: note: candidate constructor (the implicit copy constructor) not viable: requires 1 argument, but 4 were provided
+typedef struct s_tasks_msg
+               ^
+./Middleware/TaskManager\taskmanager.hpp:15:16: note: candidate constructor (the implicit move constructor) not viable: requires 1 argument, but 4 were provided
+./Middleware/TaskManager\taskmanager.hpp:15:16: note: candidate constructor (the implicit default constructor) not viable: requires 0 arguments, but 4 were provided
+1 error generated.
+
+[2022-04-11 22:46:52]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <82200d7cd0cf4a279c5fb9fc299a656f>:0 
+---
+Error: L6218E: Undefined symbol get_systime() (referred from taskmanager.o).
+Error: L6218E: Undefined symbol beep_init() (referred from main.o).
+Error: L6218E: Undefined symbol beep_cycle() (referred from main.o).
+Error: L6218E: Undefined symbol led_init() (referred from main.o).
+Error: L6218E: Undefined symbol wmemcpy (referred from ios.cpp.o).
+Error: L6218E: Undefined symbol __ARM_snprintf (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol __ARM_vasprintf (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol __ARM_vsnprintf (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol __ARM_vsscanf (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol _mbsnrtowcs (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol _wcsnrtombs (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol btowc (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswalpha (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswblank (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswcntrl (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswdigit (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswlower (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswprint (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswpunct (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswspace (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswupper (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswxdigit (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol mbrlen (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol mbsrtowcs (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol mbtowc (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol towlower (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol towupper (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol wcscoll (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol wcsxfrm (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol wctob (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol wmemset (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol swprintf (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wcslen (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wcstol (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wcstoll (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wcstoul (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wcstoull (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wmemchr (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wmemcmp (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wmemmove (referred from string.cpp.o).
+Error: L6218E: Undefined symbol __wcstod_int (referred from wcstod.o).
+Error: L6218E: Undefined symbol __wcstof_int (referred from wcstof.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 42 error messages.
+
+
+[2022-04-11 22:47:52]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <82200d7cd0cf4a279c5fb9fc299a656f>:0 
+---
+Error: L6218E: Undefined symbol get_systime() (referred from taskmanager.o).
+Error: L6218E: Undefined symbol beep_init() (referred from main.o).
+Error: L6218E: Undefined symbol beep_cycle() (referred from main.o).
+Error: L6218E: Undefined symbol led_cycle() (referred from main.o).
+Error: L6218E: Undefined symbol led_init() (referred from main.o).
+Error: L6218E: Undefined symbol wmemcpy (referred from ios.cpp.o).
+Error: L6218E: Undefined symbol __ARM_snprintf (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol __ARM_vasprintf (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol __ARM_vsnprintf (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol __ARM_vsscanf (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol _mbsnrtowcs (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol _wcsnrtombs (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol btowc (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswalpha (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswblank (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswcntrl (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswdigit (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswlower (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswprint (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswpunct (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswspace (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswupper (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswxdigit (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol mbrlen (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol mbsrtowcs (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol mbtowc (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol towlower (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol towupper (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol wcscoll (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol wcsxfrm (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol wctob (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol wmemset (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol swprintf (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wcslen (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wcstol (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wcstoll (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wcstoul (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wcstoull (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wmemchr (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wmemcmp (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wmemmove (referred from string.cpp.o).
+Error: L6218E: Undefined symbol __wcstod_int (referred from wcstod.o).
+Error: L6218E: Undefined symbol __wcstof_int (referred from wcstof.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 43 error messages.
+
+
+[2022-04-11 22:48:12]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <82200d7cd0cf4a279c5fb9fc299a656f>:0 
+---
+Error: L6218E: Undefined symbol get_systime() (referred from taskmanager.o).
+Error: L6218E: Undefined symbol beep_init() (referred from main.o).
+Error: L6218E: Undefined symbol beep_cycle() (referred from main.o).
+Error: L6218E: Undefined symbol led_cycle() (referred from main.o).
+Error: L6218E: Undefined symbol led_init() (referred from main.o).
+Error: L6218E: Undefined symbol wmemcpy (referred from ios.cpp.o).
+Error: L6218E: Undefined symbol __ARM_snprintf (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol __ARM_vasprintf (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol __ARM_vsnprintf (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol __ARM_vsscanf (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol _mbsnrtowcs (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol _wcsnrtombs (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol btowc (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswalpha (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswblank (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswcntrl (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswdigit (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswlower (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswprint (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswpunct (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswspace (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswupper (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswxdigit (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol mbrlen (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol mbsrtowcs (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol mbtowc (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol towlower (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol towupper (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol wcscoll (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol wcsxfrm (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol wctob (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol wmemset (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol swprintf (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wcslen (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wcstol (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wcstoll (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wcstoul (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wcstoull (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wmemchr (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wmemcmp (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wmemmove (referred from string.cpp.o).
+Error: L6218E: Undefined symbol __wcstod_int (referred from wcstod.o).
+Error: L6218E: Undefined symbol __wcstof_int (referred from wcstof.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 43 error messages.
+
+
+[2022-04-11 22:49:47]	compilation failed at : "c:\Users\Harry\Desktop\ex01_final_cpp_AC6_C99_CPP11\Middleware\TaskManager\systime.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <82200d7cd0cf4a279c5fb9fc299a656f>:0 
+---
+In file included from ./Middleware/TaskManager/systime.c:1:
+./Middleware/TaskManager/systime.h:3:8: error: expected identifier or '('
+extern "C"
+       ^
+./Middleware/TaskManager/systime.h:12:2: error: #endif without #if
+#endif
+ ^
+2 errors generated.
+
+[2022-04-11 22:50:44]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <82200d7cd0cf4a279c5fb9fc299a656f>:0 
+---
+Error: L6218E: Undefined symbol wmemcpy (referred from ios.cpp.o).
+Error: L6218E: Undefined symbol __ARM_snprintf (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol __ARM_vasprintf (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol __ARM_vsnprintf (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol __ARM_vsscanf (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol _mbsnrtowcs (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol _wcsnrtombs (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol btowc (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswalpha (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswblank (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswcntrl (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswdigit (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswlower (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswprint (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswpunct (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswspace (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswupper (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswxdigit (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol mbrlen (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol mbsrtowcs (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol mbtowc (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol towlower (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol towupper (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol wcscoll (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol wcsxfrm (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol wctob (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol wmemset (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol swprintf (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wcslen (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wcstol (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wcstoll (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wcstoul (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wcstoull (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wmemchr (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wmemcmp (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wmemmove (referred from string.cpp.o).
+Error: L6218E: Undefined symbol __wcstod_int (referred from wcstod.o).
+Error: L6218E: Undefined symbol __wcstof_int (referred from wcstof.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 38 error messages.
+
+
+[2022-04-11 22:51:05]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <82200d7cd0cf4a279c5fb9fc299a656f>:0 
+---
+Error: L6218E: Undefined symbol wmemcpy (referred from ios.cpp.o).
+Error: L6218E: Undefined symbol __ARM_snprintf (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol __ARM_vasprintf (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol __ARM_vsnprintf (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol __ARM_vsscanf (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol _mbsnrtowcs (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol _wcsnrtombs (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol btowc (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswalpha (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswblank (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswcntrl (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswdigit (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswlower (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswprint (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswpunct (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswspace (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswupper (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol iswxdigit (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol mbrlen (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol mbsrtowcs (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol mbtowc (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol towlower (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol towupper (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol wcscoll (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol wcsxfrm (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol wctob (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol wmemset (referred from locale.cpp.o).
+Error: L6218E: Undefined symbol swprintf (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wcslen (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wcstol (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wcstoll (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wcstoul (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wcstoull (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wmemchr (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wmemcmp (referred from string.cpp.o).
+Error: L6218E: Undefined symbol wmemmove (referred from string.cpp.o).
+Error: L6218E: Undefined symbol __wcstod_int (referred from wcstod.o).
+Error: L6218E: Undefined symbol __wcstof_int (referred from wcstof.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 38 error messages.
+
+
+[2022-04-11 22:52:26]	[done]
+	build successfully !
+
+[2022-04-11 22:54:33]	[done]
+	build successfully !
+
+[2022-04-12 13:29:56]	[done]
+	build successfully !
+
