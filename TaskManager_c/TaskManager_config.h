@@ -7,7 +7,7 @@ extern "C"
 #endif
 
 #define MAX_TASK_NUM     10
-
+#define SYS_CYCLE_TIME   1
 
 // 跨平台移植，处理编译器
 #ifdef STM32F10X_CL         // kill编译器

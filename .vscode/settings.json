@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.nse": "lua",
+        "taskmanager.h": "c",
+        "taskmanager_config.h": "c"
+    }
+}

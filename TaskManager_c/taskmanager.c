@@ -29,10 +29,10 @@ void _add(PID)
 }
 
 
-void TM_init(uint32_t sys_cycle_time)
+void TM_init()
 {
     #ifdef ARM_KILL
-        SysTick_Config(sys_cycle_time * 72000000 / 1000);
+        SysTick_Config(SYS_CYCLE_TIME * 72000000 / 1000);
     #else
         ;
     #endif
