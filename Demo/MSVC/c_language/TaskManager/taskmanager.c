@@ -4,7 +4,7 @@
 TaskMsg* task_list[MAX_TASK_NUM];
 uint8_t task_list_state[MAX_TASK_NUM];
 
-// ÔÚlistÖĞÕÒµ½Ò»¸ö¿ÉÒÔÌí¼ÓÈÎÎñµÄÎ»ÖÃ
+// åœ¨listä¸­æ‰¾åˆ°ä¸€ä¸ªå¯ä»¥æ·»åŠ ä»»åŠ¡çš„ä½ç½®
 uint32_t _get_pos_to_add(void)
 {
     for(uint32_t PID=0; PID<MAX_TASK_NUM; PID++)
@@ -17,7 +17,7 @@ uint32_t _get_pos_to_add(void)
     }
 }
 
-// ´ÓlistÖĞÉ¾³ıÈÎÎñ
+// ä»listä¸­åˆ é™¤ä»»åŠ¡
 void _delete(PID)
 {
     task_list_state[PID]=0;
@@ -29,10 +29,10 @@ void _add(PID)
 }
 
 
-void TM_init(uint32_t sys_cycle_time)
+void TM_init()
 {
     #ifdef ARM_KILL
-        SysTick_Config(sys_cycle_time * 72000000 / 1000);
+        SysTick_Config(SYS_CYCLE_TIME * 72000000 / 1000);
     #else
         ;
     #endif
@@ -70,14 +70,14 @@ void TM_run(void)
 {
 	static uint32_t systime_old = 0;
 
-	// ¸üĞÂÊ±¼ä
+	// æ›´æ–°æ—¶é—´
 	uint32_t systime = get_systime();
 	if (systime == systime_old)
 		return;
 	else
 		systime_old = systime;
 
-	// Ñ­»·
+	// å¾ªç¯
 	for (uint32_t PID=0; PID<MAX_TASK_NUM; PID++)
 	{
 		if(task_list_state[PID]==0)
@@ -85,21 +85,21 @@ void TM_run(void)
 
         if (task_list[PID]->start_time == systime)
 		{
-			// µ±µ½Ê±¼äÁË£¬ÔËĞĞÈÎÎñ
+			// å½“åˆ°æ—¶é—´äº†ï¼Œè¿è¡Œä»»åŠ¡
 			task_list[PID]->task_fun();
-			// ÎŞÏŞÈÎÎñÎŞÏŞÑ­»·
+			// æ— é™ä»»åŠ¡æ— é™å¾ªç¯
 			if (task_list[PID]->remain_count != RUN_FOREVER)
 			{
-				// ¸üĞÂÏÂÒ»´ÎÈÎÎñÊ±¼ä
+				// æ›´æ–°ä¸‹ä¸€æ¬¡ä»»åŠ¡æ—¶é—´
 				task_list[PID]->start_time = systime + task_list[PID]->period;
 			}
 			else
 			{
-				// ¸üĞÂÏÂÒ»´ÎÈÎÎñÊ±¼ä
+				// æ›´æ–°ä¸‹ä¸€æ¬¡ä»»åŠ¡æ—¶é—´
 				task_list[PID]->start_time = systime + task_list[PID]->period;
-				// Ê£Óà´ÎÊı×Ô¼õ
+				// å‰©ä½™æ¬¡æ•°è‡ªå‡
 				task_list[PID]->remain_count -= 1;
-				// µ±Ê£Óà´ÎÊıÎª0£¬½«ÆäÉ¾³ı
+				// å½“å‰©ä½™æ¬¡æ•°ä¸º0ï¼Œå°†å…¶åˆ é™¤
 				if (task_list[PID]->remain_count == 0)
                     TM_kill_by_PID(PID);
 			}

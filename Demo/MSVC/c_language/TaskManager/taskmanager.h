@@ -23,7 +23,7 @@ typedef struct s_tasks_msg
     uint32_t PID;
 }TaskMsg;
 
-void TM_init(uint32_t sys_cycle_time);
+void TM_init();
 uint32_t TM_add_task(TaskMsg* new_task_msg);
 void TM_kill_by_PID(uint32_t PID);
 void TM_kill_by_taskmsg(TaskMsg* task_msg);

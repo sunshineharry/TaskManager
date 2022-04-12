@@ -47,7 +47,7 @@
 
 - `void TM_run(void)`：运行系统
 
-**示例代码**：
+**示例代码1**：
 
 ```c
 #include "taskmanager.h"
@@ -83,7 +83,101 @@ void main(void)
 }
 ```
 
+**示例代码2** `[Demo/MSVC/c_language]`
+```C
+#include "../TaskManager/taskmanager.h"
+#include "../TaskManager/TaskManager_config.h"
 
+#include "stdio.h"
+
+void task0(void)
+{
+	static i = 1;
+	printf_s("\n%d:", i);
+	i++;
+}
+
+void task1(void)
+{
+	printf_s("task1!");
+}
+
+void task2(void)
+{
+	printf_s("task2!");
+}
+
+
+
+void main(void)
+{
+	TM_init(1);
+	TaskMsg tasks_msg0 = { task0,START_NOW,1,RUN_FOREVER,0 };
+	int PID0 = TM_add_task(&tasks_msg0);
+	TaskMsg tasks_msg1 = { task1,START_NOW,2,RUN_FOREVER,0 };
+	int PID1 =  TM_add_task(&tasks_msg1);
+	TaskMsg tasks_msg2 = { task2,START_NOW,4,RUN_FOREVER,0 };
+	int PID2 = TM_add_task(&tasks_msg2);
+	while (1)
+	{
+		TM_run();
+		if (get_systime() > 10)
+			tasks_msg1.period = 1;
+		if (get_systime() > 20)
+			TM_kill_by_PID(PID1);
+		if (get_systime() > 30)
+			TM_kill_by_taskmsg(&tasks_msg2);
+		if (get_systime() > 40)
+			return;
+	}
+}
+```
+运行结果:
+```
+1:task1!task2!
+2:
+3:task1!
+4:
+5:task1!task2!
+6:
+7:task1!
+8:
+9:task1!task2!
+10:
+11:task1!
+12:
+13:task1!task2!
+14:task1!
+15:task1!
+16:task1!
+17:task1!task2!
+18:task1!
+19:task1!
+20:task1!
+21:task2!
+22:
+23:
+24:
+25:task2!
+26:
+27:
+28:
+29:task2!
+30:
+31:
+32:
+33:
+34:
+35:
+36:
+37:
+38:
+39:
+40:
+C:\Users\Harry\Desktop\TaskManager\Demo\MSVC\c_language\Debug\c_language.exe (进程 41888)已退出，返回代码为: 0。
+若要在调试停止时自动关闭控制台，请启用“工具”->“选项”->“调试”->“调试停止时自动关闭控制台”。
+按任意键关闭此窗口...
+```
 
 ## 2.2 移植方法
 
