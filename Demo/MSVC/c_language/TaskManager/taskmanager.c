@@ -42,6 +42,9 @@ uint32_t TM_add_task(TaskMsg *new_task_msg)
 {
     uint32_t PID = _get_pos_to_add();
     new_task_msg->PID = PID;
+    // 将绝对时间更新到系统节拍
+    new_task_msg->start_time = (new_task_msg->start_time / SYS_CYCLE_TIME);
+    new_task_msg->period = (new_task_msg->period / SYS_CYCLE_TIME);
     task_list[PID] = new_task_msg;
     _add(PID);
     return PID;

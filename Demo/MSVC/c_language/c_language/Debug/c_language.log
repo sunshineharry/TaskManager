@@ -1,6 +1,13 @@
-﻿  taskmanager.c
+﻿  systime.c
+c:\users\harry\desktop\taskmanager\demo\msvc\c_language\taskmanager\systime.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\harry\desktop\taskmanager\demo\msvc\c_language\taskmanager\taskmanager_config.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  taskmanager.c
 c:\users\harry\desktop\taskmanager\demo\msvc\c_language\taskmanager\taskmanager.c : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
 c:\users\harry\desktop\taskmanager\demo\msvc\c_language\taskmanager\taskmanager.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
 c:\users\harry\desktop\taskmanager\demo\msvc\c_language\taskmanager\taskmanager_config.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  main.c
+c:\users\harry\desktop\taskmanager\demo\msvc\c_language\taskmanager\taskmanager.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+c:\users\harry\desktop\taskmanager\demo\msvc\c_language\taskmanager\taskmanager_config.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  正在生成代码...
 c:\users\harry\desktop\taskmanager\demo\msvc\c_language\taskmanager\taskmanager.c(18): warning C4715: “_get_pos_to_add”: 不是所有的控件路径都返回值
   c_language.vcxproj -> C:\Users\Harry\Desktop\TaskManager\Demo\MSVC\c_language\Debug\c_language.exe

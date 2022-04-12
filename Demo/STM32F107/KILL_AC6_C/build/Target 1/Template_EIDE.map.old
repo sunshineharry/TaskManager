@@ -9,17 +9,17 @@ Section Cross References
     startup_stm32f10x_cl.o(RESET) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
     startup_stm32f10x_cl.o(RESET) refers to startup_stm32f10x_cl.o(STACK) for __initial_sp
     startup_stm32f10x_cl.o(RESET) refers to startup_stm32f10x_cl.o(.text) for Reset_Handler
-    startup_stm32f10x_cl.o(RESET) refers to lto-llvm-d766e0.o(.text.NMI_Handler) for NMI_Handler
-    startup_stm32f10x_cl.o(RESET) refers to lto-llvm-d766e0.o(.text.HardFault_Handler) for HardFault_Handler
-    startup_stm32f10x_cl.o(RESET) refers to lto-llvm-d766e0.o(.text.MemManage_Handler) for MemManage_Handler
-    startup_stm32f10x_cl.o(RESET) refers to lto-llvm-d766e0.o(.text.BusFault_Handler) for BusFault_Handler
-    startup_stm32f10x_cl.o(RESET) refers to lto-llvm-d766e0.o(.text.UsageFault_Handler) for UsageFault_Handler
-    startup_stm32f10x_cl.o(RESET) refers to lto-llvm-d766e0.o(.text.SVC_Handler) for SVC_Handler
-    startup_stm32f10x_cl.o(RESET) refers to lto-llvm-d766e0.o(.text.DebugMon_Handler) for DebugMon_Handler
-    startup_stm32f10x_cl.o(RESET) refers to lto-llvm-d766e0.o(.text.PendSV_Handler) for PendSV_Handler
-    startup_stm32f10x_cl.o(RESET) refers to lto-llvm-d766e0.o(.text.SysTick_Handler) for SysTick_Handler
+    startup_stm32f10x_cl.o(RESET) refers to lto-llvm-5dad67.o(.text.NMI_Handler) for NMI_Handler
+    startup_stm32f10x_cl.o(RESET) refers to lto-llvm-5dad67.o(.text.HardFault_Handler) for HardFault_Handler
+    startup_stm32f10x_cl.o(RESET) refers to lto-llvm-5dad67.o(.text.MemManage_Handler) for MemManage_Handler
+    startup_stm32f10x_cl.o(RESET) refers to lto-llvm-5dad67.o(.text.BusFault_Handler) for BusFault_Handler
+    startup_stm32f10x_cl.o(RESET) refers to lto-llvm-5dad67.o(.text.UsageFault_Handler) for UsageFault_Handler
+    startup_stm32f10x_cl.o(RESET) refers to lto-llvm-5dad67.o(.text.SVC_Handler) for SVC_Handler
+    startup_stm32f10x_cl.o(RESET) refers to lto-llvm-5dad67.o(.text.DebugMon_Handler) for DebugMon_Handler
+    startup_stm32f10x_cl.o(RESET) refers to lto-llvm-5dad67.o(.text.PendSV_Handler) for PendSV_Handler
+    startup_stm32f10x_cl.o(RESET) refers to lto-llvm-5dad67.o(.text.SysTick_Handler) for SysTick_Handler
     startup_stm32f10x_cl.o(.text) refers (Special) to heapauxi.o(.text) for __use_two_region_memory
-    startup_stm32f10x_cl.o(.text) refers to lto-llvm-d766e0.o(.text.SystemInit) for SystemInit
+    startup_stm32f10x_cl.o(.text) refers to lto-llvm-5dad67.o(.text.SystemInit) for SystemInit
     startup_stm32f10x_cl.o(.text) refers to __main.o(!!!main) for __main
     startup_stm32f10x_cl.o(.text) refers to startup_stm32f10x_cl.o(HEAP) for Heap_Mem
     startup_stm32f10x_cl.o(.text) refers to startup_stm32f10x_cl.o(STACK) for Stack_Mem
@@ -33,7 +33,7 @@ Section Cross References
     __rtentry2.o(.ARM.Collect$$rtentry$$00000008) refers to boardinit2.o(.text) for _platform_post_stackheap_init
     __rtentry2.o(.ARM.Collect$$rtentry$$0000000A) refers to libinit.o(.ARM.Collect$$libinit$$00000000) for __rt_lib_init
     __rtentry2.o(.ARM.Collect$$rtentry$$0000000B) refers to boardinit3.o(.text) for _platform_post_lib_init
-    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to lto-llvm-d766e0.o(.text.main) for main
+    __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to lto-llvm-5dad67.o(.text.main) for main
     __rtentry2.o(.ARM.Collect$$rtentry$$0000000D) refers to exit.o(.text) for exit
     __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000001) for .ARM.Collect$$rtentry$$00000001
     __rtentry2.o(.ARM.exidx) refers to __rtentry2.o(.ARM.Collect$$rtentry$$00000008) for .ARM.Collect$$rtentry$$00000008
@@ -127,109 +127,109 @@ Section Cross References
     defsig_cppl_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
     defsig_segv_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
     defsig_other.o(.text) refers to defsig_general.o(.text) for __default_signal_display
-    lto-llvm-d766e0.o(.ARM.exidx.text.GPIO_Init) refers to lto-llvm-d766e0.o(.text.GPIO_Init) for [Anonymous Symbol]
-    lto-llvm-d766e0.o(.ARM.exidx.text.GPIO_SetBits) refers to lto-llvm-d766e0.o(.text.GPIO_SetBits) for [Anonymous Symbol]
-    lto-llvm-d766e0.o(.ARM.exidx.text.GPIO_ResetBits) refers to lto-llvm-d766e0.o(.text.GPIO_ResetBits) for [Anonymous Symbol]
-    lto-llvm-d766e0.o(.ARM.exidx.text.RCC_APB2PeriphClockCmd) refers to lto-llvm-d766e0.o(.text.RCC_APB2PeriphClockCmd) for [Anonymous Symbol]
-    lto-llvm-d766e0.o(.text.get_systime) refers to lto-llvm-d766e0.o(.bss.systime) for systime
-    lto-llvm-d766e0.o(.ARM.exidx.text.get_systime) refers to lto-llvm-d766e0.o(.text.get_systime) for [Anonymous Symbol]
-    lto-llvm-d766e0.o(.text.update_systime) refers to lto-llvm-d766e0.o(.bss.systime) for systime
-    lto-llvm-d766e0.o(.ARM.exidx.text.update_systime) refers to lto-llvm-d766e0.o(.text.update_systime) for [Anonymous Symbol]
-    lto-llvm-d766e0.o(.text._get_pos_to_add) refers to lto-llvm-d766e0.o(.bss.task_list_state) for task_list_state
-    lto-llvm-d766e0.o(.ARM.exidx.text._get_pos_to_add) refers to lto-llvm-d766e0.o(.text._get_pos_to_add) for [Anonymous Symbol]
-    lto-llvm-d766e0.o(.text._delete) refers to lto-llvm-d766e0.o(.bss.task_list_state) for task_list_state
-    lto-llvm-d766e0.o(.ARM.exidx.text._delete) refers to lto-llvm-d766e0.o(.text._delete) for [Anonymous Symbol]
-    lto-llvm-d766e0.o(.text._add) refers to lto-llvm-d766e0.o(.bss.task_list_state) for task_list_state
-    lto-llvm-d766e0.o(.ARM.exidx.text._add) refers to lto-llvm-d766e0.o(.text._add) for [Anonymous Symbol]
-    lto-llvm-d766e0.o(.text.TM_init) refers to lto-llvm-d766e0.o(.text.SysTick_Config) for SysTick_Config
-    lto-llvm-d766e0.o(.ARM.exidx.text.TM_init) refers to lto-llvm-d766e0.o(.text.TM_init) for [Anonymous Symbol]
-    lto-llvm-d766e0.o(.text.SysTick_Config) refers to lto-llvm-d766e0.o(.text.__NVIC_SetPriority) for __NVIC_SetPriority
-    lto-llvm-d766e0.o(.ARM.exidx.text.SysTick_Config) refers to lto-llvm-d766e0.o(.text.SysTick_Config) for [Anonymous Symbol]
-    lto-llvm-d766e0.o(.ARM.exidx.text.__NVIC_SetPriority) refers to lto-llvm-d766e0.o(.text.__NVIC_SetPriority) for [Anonymous Symbol]
-    lto-llvm-d766e0.o(.text.TM_add_task) refers to lto-llvm-d766e0.o(.text._get_pos_to_add) for _get_pos_to_add
-    lto-llvm-d766e0.o(.text.TM_add_task) refers to lto-llvm-d766e0.o(.bss.task_list) for task_list
-    lto-llvm-d766e0.o(.text.TM_add_task) refers to lto-llvm-d766e0.o(.text._add) for _add
-    lto-llvm-d766e0.o(.ARM.exidx.text.TM_add_task) refers to lto-llvm-d766e0.o(.text.TM_add_task) for [Anonymous Symbol]
-    lto-llvm-d766e0.o(.text.TM_kill_by_PID) refers to lto-llvm-d766e0.o(.bss.task_list) for task_list
-    lto-llvm-d766e0.o(.text.TM_kill_by_PID) refers to lto-llvm-d766e0.o(.text._delete) for _delete
-    lto-llvm-d766e0.o(.ARM.exidx.text.TM_kill_by_PID) refers to lto-llvm-d766e0.o(.text.TM_kill_by_PID) for [Anonymous Symbol]
-    lto-llvm-d766e0.o(.text.TM_run) refers to lto-llvm-d766e0.o(.text.get_systime) for get_systime
-    lto-llvm-d766e0.o(.text.TM_run) refers to lto-llvm-d766e0.o(.bss.TM_run.systime_old) for TM_run.systime_old
-    lto-llvm-d766e0.o(.text.TM_run) refers to lto-llvm-d766e0.o(.bss.task_list_state) for task_list_state
-    lto-llvm-d766e0.o(.text.TM_run) refers to lto-llvm-d766e0.o(.bss.task_list) for task_list
-    lto-llvm-d766e0.o(.text.TM_run) refers to lto-llvm-d766e0.o(.text.TM_kill_by_PID) for TM_kill_by_PID
-    lto-llvm-d766e0.o(.ARM.exidx.text.TM_run) refers to lto-llvm-d766e0.o(.text.TM_run) for [Anonymous Symbol]
-    lto-llvm-d766e0.o(.text.led_init) refers to lto-llvm-d766e0.o(.text.RCC_APB2PeriphClockCmd) for RCC_APB2PeriphClockCmd
-    lto-llvm-d766e0.o(.text.led_init) refers to lto-llvm-d766e0.o(.text.GPIO_Init) for GPIO_Init
-    lto-llvm-d766e0.o(.text.led_init) refers to lto-llvm-d766e0.o(.text.GPIO_ResetBits) for GPIO_ResetBits
-    lto-llvm-d766e0.o(.ARM.exidx.text.led_init) refers to lto-llvm-d766e0.o(.text.led_init) for [Anonymous Symbol]
-    lto-llvm-d766e0.o(.text.next_Led) refers to lto-llvm-d766e0.o(.text.GPIO_SetBits) for GPIO_SetBits
-    lto-llvm-d766e0.o(.text.next_Led) refers to lto-llvm-d766e0.o(.text.GPIO_ResetBits) for GPIO_ResetBits
-    lto-llvm-d766e0.o(.ARM.exidx.text.next_Led) refers to lto-llvm-d766e0.o(.text.next_Led) for [Anonymous Symbol]
-    lto-llvm-d766e0.o(.text.led_cycle) refers to lto-llvm-d766e0.o(.bss.led_cycle.led_state) for led_cycle.led_state
-    lto-llvm-d766e0.o(.text.led_cycle) refers to lto-llvm-d766e0.o(.text.next_Led) for next_Led
-    lto-llvm-d766e0.o(.ARM.exidx.text.led_cycle) refers to lto-llvm-d766e0.o(.text.led_cycle) for [Anonymous Symbol]
-    lto-llvm-d766e0.o(.text.main) refers to lto-llvm-d766e0.o(.text.TM_init) for TM_init
-    lto-llvm-d766e0.o(.text.main) refers to lto-llvm-d766e0.o(.text.led_init) for led_init
-    lto-llvm-d766e0.o(.text.main) refers to lto-llvm-d766e0.o(.text.led_cycle) for led_cycle
-    lto-llvm-d766e0.o(.text.main) refers to lto-llvm-d766e0.o(.text.get_systime) for get_systime
-    lto-llvm-d766e0.o(.text.main) refers to lto-llvm-d766e0.o(.text.TM_add_task) for TM_add_task
-    lto-llvm-d766e0.o(.text.main) refers to lto-llvm-d766e0.o(.text.TM_run) for TM_run
-    lto-llvm-d766e0.o(.ARM.exidx.text.main) refers to lto-llvm-d766e0.o(.text.main) for [Anonymous Symbol]
-    lto-llvm-d766e0.o(.ARM.exidx.text.NMI_Handler) refers to lto-llvm-d766e0.o(.text.NMI_Handler) for [Anonymous Symbol]
-    lto-llvm-d766e0.o(.ARM.exidx.text.HardFault_Handler) refers to lto-llvm-d766e0.o(.text.HardFault_Handler) for [Anonymous Symbol]
-    lto-llvm-d766e0.o(.ARM.exidx.text.MemManage_Handler) refers to lto-llvm-d766e0.o(.text.MemManage_Handler) for [Anonymous Symbol]
-    lto-llvm-d766e0.o(.ARM.exidx.text.BusFault_Handler) refers to lto-llvm-d766e0.o(.text.BusFault_Handler) for [Anonymous Symbol]
-    lto-llvm-d766e0.o(.ARM.exidx.text.UsageFault_Handler) refers to lto-llvm-d766e0.o(.text.UsageFault_Handler) for [Anonymous Symbol]
-    lto-llvm-d766e0.o(.ARM.exidx.text.SVC_Handler) refers to lto-llvm-d766e0.o(.text.SVC_Handler) for [Anonymous Symbol]
-    lto-llvm-d766e0.o(.ARM.exidx.text.DebugMon_Handler) refers to lto-llvm-d766e0.o(.text.DebugMon_Handler) for [Anonymous Symbol]
-    lto-llvm-d766e0.o(.ARM.exidx.text.PendSV_Handler) refers to lto-llvm-d766e0.o(.text.PendSV_Handler) for [Anonymous Symbol]
-    lto-llvm-d766e0.o(.text.SysTick_Handler) refers to lto-llvm-d766e0.o(.text.update_systime) for update_systime
-    lto-llvm-d766e0.o(.ARM.exidx.text.SysTick_Handler) refers to lto-llvm-d766e0.o(.text.SysTick_Handler) for [Anonymous Symbol]
-    lto-llvm-d766e0.o(.text.SystemInit) refers to lto-llvm-d766e0.o(.text.SetSysClock) for SetSysClock
-    lto-llvm-d766e0.o(.ARM.exidx.text.SystemInit) refers to lto-llvm-d766e0.o(.text.SystemInit) for [Anonymous Symbol]
-    lto-llvm-d766e0.o(.text.SetSysClock) refers to lto-llvm-d766e0.o(.text.SetSysClockTo72) for SetSysClockTo72
-    lto-llvm-d766e0.o(.ARM.exidx.text.SetSysClock) refers to lto-llvm-d766e0.o(.text.SetSysClock) for [Anonymous Symbol]
-    lto-llvm-d766e0.o(.ARM.exidx.text.SetSysClockTo72) refers to lto-llvm-d766e0.o(.text.SetSysClockTo72) for [Anonymous Symbol]
+    lto-llvm-5dad67.o(.ARM.exidx.text.GPIO_Init) refers to lto-llvm-5dad67.o(.text.GPIO_Init) for [Anonymous Symbol]
+    lto-llvm-5dad67.o(.ARM.exidx.text.GPIO_SetBits) refers to lto-llvm-5dad67.o(.text.GPIO_SetBits) for [Anonymous Symbol]
+    lto-llvm-5dad67.o(.ARM.exidx.text.GPIO_ResetBits) refers to lto-llvm-5dad67.o(.text.GPIO_ResetBits) for [Anonymous Symbol]
+    lto-llvm-5dad67.o(.ARM.exidx.text.RCC_APB2PeriphClockCmd) refers to lto-llvm-5dad67.o(.text.RCC_APB2PeriphClockCmd) for [Anonymous Symbol]
+    lto-llvm-5dad67.o(.text.get_systime) refers to lto-llvm-5dad67.o(.bss.systime) for systime
+    lto-llvm-5dad67.o(.ARM.exidx.text.get_systime) refers to lto-llvm-5dad67.o(.text.get_systime) for [Anonymous Symbol]
+    lto-llvm-5dad67.o(.text.update_systime) refers to lto-llvm-5dad67.o(.bss.systime) for systime
+    lto-llvm-5dad67.o(.ARM.exidx.text.update_systime) refers to lto-llvm-5dad67.o(.text.update_systime) for [Anonymous Symbol]
+    lto-llvm-5dad67.o(.text._get_pos_to_add) refers to lto-llvm-5dad67.o(.bss.task_list_state) for task_list_state
+    lto-llvm-5dad67.o(.ARM.exidx.text._get_pos_to_add) refers to lto-llvm-5dad67.o(.text._get_pos_to_add) for [Anonymous Symbol]
+    lto-llvm-5dad67.o(.text._delete) refers to lto-llvm-5dad67.o(.bss.task_list_state) for task_list_state
+    lto-llvm-5dad67.o(.ARM.exidx.text._delete) refers to lto-llvm-5dad67.o(.text._delete) for [Anonymous Symbol]
+    lto-llvm-5dad67.o(.text._add) refers to lto-llvm-5dad67.o(.bss.task_list_state) for task_list_state
+    lto-llvm-5dad67.o(.ARM.exidx.text._add) refers to lto-llvm-5dad67.o(.text._add) for [Anonymous Symbol]
+    lto-llvm-5dad67.o(.text.TM_init) refers to lto-llvm-5dad67.o(.text.SysTick_Config) for SysTick_Config
+    lto-llvm-5dad67.o(.ARM.exidx.text.TM_init) refers to lto-llvm-5dad67.o(.text.TM_init) for [Anonymous Symbol]
+    lto-llvm-5dad67.o(.text.SysTick_Config) refers to lto-llvm-5dad67.o(.text.__NVIC_SetPriority) for __NVIC_SetPriority
+    lto-llvm-5dad67.o(.ARM.exidx.text.SysTick_Config) refers to lto-llvm-5dad67.o(.text.SysTick_Config) for [Anonymous Symbol]
+    lto-llvm-5dad67.o(.ARM.exidx.text.__NVIC_SetPriority) refers to lto-llvm-5dad67.o(.text.__NVIC_SetPriority) for [Anonymous Symbol]
+    lto-llvm-5dad67.o(.text.TM_add_task) refers to lto-llvm-5dad67.o(.text._get_pos_to_add) for _get_pos_to_add
+    lto-llvm-5dad67.o(.text.TM_add_task) refers to lto-llvm-5dad67.o(.bss.task_list) for task_list
+    lto-llvm-5dad67.o(.text.TM_add_task) refers to lto-llvm-5dad67.o(.text._add) for _add
+    lto-llvm-5dad67.o(.ARM.exidx.text.TM_add_task) refers to lto-llvm-5dad67.o(.text.TM_add_task) for [Anonymous Symbol]
+    lto-llvm-5dad67.o(.text.TM_kill_by_PID) refers to lto-llvm-5dad67.o(.bss.task_list) for task_list
+    lto-llvm-5dad67.o(.text.TM_kill_by_PID) refers to lto-llvm-5dad67.o(.text._delete) for _delete
+    lto-llvm-5dad67.o(.ARM.exidx.text.TM_kill_by_PID) refers to lto-llvm-5dad67.o(.text.TM_kill_by_PID) for [Anonymous Symbol]
+    lto-llvm-5dad67.o(.text.TM_run) refers to lto-llvm-5dad67.o(.text.get_systime) for get_systime
+    lto-llvm-5dad67.o(.text.TM_run) refers to lto-llvm-5dad67.o(.bss.TM_run.systime_old) for TM_run.systime_old
+    lto-llvm-5dad67.o(.text.TM_run) refers to lto-llvm-5dad67.o(.bss.task_list_state) for task_list_state
+    lto-llvm-5dad67.o(.text.TM_run) refers to lto-llvm-5dad67.o(.bss.task_list) for task_list
+    lto-llvm-5dad67.o(.text.TM_run) refers to lto-llvm-5dad67.o(.text.TM_kill_by_PID) for TM_kill_by_PID
+    lto-llvm-5dad67.o(.ARM.exidx.text.TM_run) refers to lto-llvm-5dad67.o(.text.TM_run) for [Anonymous Symbol]
+    lto-llvm-5dad67.o(.text.led_init) refers to lto-llvm-5dad67.o(.text.RCC_APB2PeriphClockCmd) for RCC_APB2PeriphClockCmd
+    lto-llvm-5dad67.o(.text.led_init) refers to lto-llvm-5dad67.o(.text.GPIO_Init) for GPIO_Init
+    lto-llvm-5dad67.o(.text.led_init) refers to lto-llvm-5dad67.o(.text.GPIO_ResetBits) for GPIO_ResetBits
+    lto-llvm-5dad67.o(.ARM.exidx.text.led_init) refers to lto-llvm-5dad67.o(.text.led_init) for [Anonymous Symbol]
+    lto-llvm-5dad67.o(.text.next_Led) refers to lto-llvm-5dad67.o(.text.GPIO_SetBits) for GPIO_SetBits
+    lto-llvm-5dad67.o(.text.next_Led) refers to lto-llvm-5dad67.o(.text.GPIO_ResetBits) for GPIO_ResetBits
+    lto-llvm-5dad67.o(.ARM.exidx.text.next_Led) refers to lto-llvm-5dad67.o(.text.next_Led) for [Anonymous Symbol]
+    lto-llvm-5dad67.o(.text.led_cycle) refers to lto-llvm-5dad67.o(.bss.led_cycle.led_state) for led_cycle.led_state
+    lto-llvm-5dad67.o(.text.led_cycle) refers to lto-llvm-5dad67.o(.text.next_Led) for next_Led
+    lto-llvm-5dad67.o(.ARM.exidx.text.led_cycle) refers to lto-llvm-5dad67.o(.text.led_cycle) for [Anonymous Symbol]
+    lto-llvm-5dad67.o(.text.main) refers to lto-llvm-5dad67.o(.text.TM_init) for TM_init
+    lto-llvm-5dad67.o(.text.main) refers to lto-llvm-5dad67.o(.text.led_init) for led_init
+    lto-llvm-5dad67.o(.text.main) refers to lto-llvm-5dad67.o(.text.led_cycle) for led_cycle
+    lto-llvm-5dad67.o(.text.main) refers to lto-llvm-5dad67.o(.text.get_systime) for get_systime
+    lto-llvm-5dad67.o(.text.main) refers to lto-llvm-5dad67.o(.text.TM_add_task) for TM_add_task
+    lto-llvm-5dad67.o(.text.main) refers to lto-llvm-5dad67.o(.text.TM_run) for TM_run
+    lto-llvm-5dad67.o(.ARM.exidx.text.main) refers to lto-llvm-5dad67.o(.text.main) for [Anonymous Symbol]
+    lto-llvm-5dad67.o(.ARM.exidx.text.NMI_Handler) refers to lto-llvm-5dad67.o(.text.NMI_Handler) for [Anonymous Symbol]
+    lto-llvm-5dad67.o(.ARM.exidx.text.HardFault_Handler) refers to lto-llvm-5dad67.o(.text.HardFault_Handler) for [Anonymous Symbol]
+    lto-llvm-5dad67.o(.ARM.exidx.text.MemManage_Handler) refers to lto-llvm-5dad67.o(.text.MemManage_Handler) for [Anonymous Symbol]
+    lto-llvm-5dad67.o(.ARM.exidx.text.BusFault_Handler) refers to lto-llvm-5dad67.o(.text.BusFault_Handler) for [Anonymous Symbol]
+    lto-llvm-5dad67.o(.ARM.exidx.text.UsageFault_Handler) refers to lto-llvm-5dad67.o(.text.UsageFault_Handler) for [Anonymous Symbol]
+    lto-llvm-5dad67.o(.ARM.exidx.text.SVC_Handler) refers to lto-llvm-5dad67.o(.text.SVC_Handler) for [Anonymous Symbol]
+    lto-llvm-5dad67.o(.ARM.exidx.text.DebugMon_Handler) refers to lto-llvm-5dad67.o(.text.DebugMon_Handler) for [Anonymous Symbol]
+    lto-llvm-5dad67.o(.ARM.exidx.text.PendSV_Handler) refers to lto-llvm-5dad67.o(.text.PendSV_Handler) for [Anonymous Symbol]
+    lto-llvm-5dad67.o(.text.SysTick_Handler) refers to lto-llvm-5dad67.o(.text.update_systime) for update_systime
+    lto-llvm-5dad67.o(.ARM.exidx.text.SysTick_Handler) refers to lto-llvm-5dad67.o(.text.SysTick_Handler) for [Anonymous Symbol]
+    lto-llvm-5dad67.o(.text.SystemInit) refers to lto-llvm-5dad67.o(.text.SetSysClock) for SetSysClock
+    lto-llvm-5dad67.o(.ARM.exidx.text.SystemInit) refers to lto-llvm-5dad67.o(.text.SystemInit) for [Anonymous Symbol]
+    lto-llvm-5dad67.o(.text.SetSysClock) refers to lto-llvm-5dad67.o(.text.SetSysClockTo72) for SetSysClockTo72
+    lto-llvm-5dad67.o(.ARM.exidx.text.SetSysClock) refers to lto-llvm-5dad67.o(.text.SetSysClock) for [Anonymous Symbol]
+    lto-llvm-5dad67.o(.ARM.exidx.text.SetSysClockTo72) refers to lto-llvm-5dad67.o(.text.SetSysClockTo72) for [Anonymous Symbol]
 
 
 ==============================================================================
 
 Removing Unused input sections from the image.
 
-    Removing lto-llvm-d766e0.o(.text), (0 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.exidx.text.GPIO_Init), (8 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.exidx.text.GPIO_SetBits), (8 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.exidx.text.GPIO_ResetBits), (8 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.exidx.text.RCC_APB2PeriphClockCmd), (8 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.exidx.text.get_systime), (8 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.exidx.text.update_systime), (8 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.exidx.text._get_pos_to_add), (8 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.exidx.text._delete), (8 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.exidx.text._add), (8 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.exidx.text.TM_init), (8 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.exidx.text.SysTick_Config), (8 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.exidx.text.__NVIC_SetPriority), (8 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.exidx.text.TM_add_task), (8 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.exidx.text.TM_kill_by_PID), (8 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.exidx.text.TM_run), (8 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.exidx.text.led_init), (8 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.exidx.text.next_Led), (8 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.exidx.text.led_cycle), (8 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.exidx.text.main), (8 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.exidx.text.NMI_Handler), (8 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.exidx.text.HardFault_Handler), (8 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.exidx.text.MemManage_Handler), (8 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.exidx.text.BusFault_Handler), (8 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.exidx.text.UsageFault_Handler), (8 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.exidx.text.SVC_Handler), (8 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.exidx.text.DebugMon_Handler), (8 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.exidx.text.PendSV_Handler), (8 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.exidx.text.SysTick_Handler), (8 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.exidx.text.SystemInit), (8 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.exidx.text.SetSysClock), (8 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.exidx.text.SetSysClockTo72), (8 bytes).
-    Removing lto-llvm-d766e0.o(.ARM.use_no_argv), (4 bytes).
+    Removing lto-llvm-5dad67.o(.text), (0 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.exidx.text.GPIO_Init), (8 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.exidx.text.GPIO_SetBits), (8 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.exidx.text.GPIO_ResetBits), (8 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.exidx.text.RCC_APB2PeriphClockCmd), (8 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.exidx.text.get_systime), (8 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.exidx.text.update_systime), (8 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.exidx.text._get_pos_to_add), (8 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.exidx.text._delete), (8 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.exidx.text._add), (8 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.exidx.text.TM_init), (8 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.exidx.text.SysTick_Config), (8 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.exidx.text.__NVIC_SetPriority), (8 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.exidx.text.TM_add_task), (8 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.exidx.text.TM_kill_by_PID), (8 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.exidx.text.TM_run), (8 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.exidx.text.led_init), (8 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.exidx.text.next_Led), (8 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.exidx.text.led_cycle), (8 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.exidx.text.main), (8 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.exidx.text.NMI_Handler), (8 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.exidx.text.HardFault_Handler), (8 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.exidx.text.MemManage_Handler), (8 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.exidx.text.BusFault_Handler), (8 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.exidx.text.UsageFault_Handler), (8 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.exidx.text.SVC_Handler), (8 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.exidx.text.DebugMon_Handler), (8 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.exidx.text.PendSV_Handler), (8 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.exidx.text.SysTick_Handler), (8 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.exidx.text.SystemInit), (8 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.exidx.text.SetSysClock), (8 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.exidx.text.SetSysClockTo72), (8 bytes).
+    Removing lto-llvm-5dad67.o(.ARM.use_no_argv), (4 bytes).
 
 33 unused section(s) (total 252 bytes) removed from the image.
 
@@ -294,7 +294,7 @@ Image Symbol Table
     ../fplib/fpinit_empty.s                  0x00000000   Number         0  fpinit_empty.o ABSOLUTE
     ./Libraries/CMSIS/CM3/DeviceSupport/ST/STM32F10x/startup/arm/startup_stm32f10x_cl.s 0x00000000   Number         0  startup_stm32f10x_cl.o ABSOLUTE
     dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
-    ld-temp.o                                0x00000000   Number         0  lto-llvm-d766e0.o ABSOLUTE
+    ld-temp.o                                0x00000000   Number         0  lto-llvm-5dad67.o ABSOLUTE
     RESET                                    0x08000000   Section      336  startup_stm32f10x_cl.o(RESET)
     !!!main                                  0x08000150   Section        8  __main.o(!!!main)
     !!!scatter                               0x08000158   Section       52  __scatter.o(!!!scatter)
@@ -348,68 +348,68 @@ Image Symbol Table
     .text                                    0x0800027c   Section        0  sys_exit.o(.text)
     .text                                    0x08000288   Section        2  use_no_semi.o(.text)
     .text                                    0x0800028a   Section        0  indicate_semi.o(.text)
-    [Anonymous Symbol]                       0x0800028c   Section        0  lto-llvm-d766e0.o(.text.BusFault_Handler)
-    [Anonymous Symbol]                       0x08000290   Section        0  lto-llvm-d766e0.o(.text.DebugMon_Handler)
-    GPIO_Init                                0x08000295   Thumb Code   408  lto-llvm-d766e0.o(.text.GPIO_Init)
-    [Anonymous Symbol]                       0x08000294   Section        0  lto-llvm-d766e0.o(.text.GPIO_Init)
-    GPIO_ResetBits                           0x0800042d   Thumb Code    28  lto-llvm-d766e0.o(.text.GPIO_ResetBits)
-    [Anonymous Symbol]                       0x0800042c   Section        0  lto-llvm-d766e0.o(.text.GPIO_ResetBits)
-    GPIO_SetBits                             0x08000449   Thumb Code    28  lto-llvm-d766e0.o(.text.GPIO_SetBits)
-    [Anonymous Symbol]                       0x08000448   Section        0  lto-llvm-d766e0.o(.text.GPIO_SetBits)
-    [Anonymous Symbol]                       0x08000464   Section        0  lto-llvm-d766e0.o(.text.HardFault_Handler)
-    [Anonymous Symbol]                       0x08000468   Section        0  lto-llvm-d766e0.o(.text.MemManage_Handler)
-    [Anonymous Symbol]                       0x0800046c   Section        0  lto-llvm-d766e0.o(.text.NMI_Handler)
-    [Anonymous Symbol]                       0x08000470   Section        0  lto-llvm-d766e0.o(.text.PendSV_Handler)
-    RCC_APB2PeriphClockCmd                   0x08000475   Thumb Code    58  lto-llvm-d766e0.o(.text.RCC_APB2PeriphClockCmd)
-    [Anonymous Symbol]                       0x08000474   Section        0  lto-llvm-d766e0.o(.text.RCC_APB2PeriphClockCmd)
-    [Anonymous Symbol]                       0x080004b0   Section        0  lto-llvm-d766e0.o(.text.SVC_Handler)
-    SetSysClock                              0x080004b5   Thumb Code     8  lto-llvm-d766e0.o(.text.SetSysClock)
-    [Anonymous Symbol]                       0x080004b4   Section        0  lto-llvm-d766e0.o(.text.SetSysClock)
-    SetSysClockTo72                          0x080004bd   Thumb Code   364  lto-llvm-d766e0.o(.text.SetSysClockTo72)
-    [Anonymous Symbol]                       0x080004bc   Section        0  lto-llvm-d766e0.o(.text.SetSysClockTo72)
-    SysTick_Config                           0x08000629   Thumb Code    82  lto-llvm-d766e0.o(.text.SysTick_Config)
-    [Anonymous Symbol]                       0x08000628   Section        0  lto-llvm-d766e0.o(.text.SysTick_Config)
-    [Anonymous Symbol]                       0x0800067c   Section        0  lto-llvm-d766e0.o(.text.SysTick_Handler)
-    [Anonymous Symbol]                       0x08000684   Section        0  lto-llvm-d766e0.o(.text.SystemInit)
-    TM_add_task                              0x08000701   Thumb Code    44  lto-llvm-d766e0.o(.text.TM_add_task)
-    [Anonymous Symbol]                       0x08000700   Section        0  lto-llvm-d766e0.o(.text.TM_add_task)
-    TM_init                                  0x0800072d   Thumb Code     8  lto-llvm-d766e0.o(.text.TM_init)
-    [Anonymous Symbol]                       0x0800072c   Section        0  lto-llvm-d766e0.o(.text.TM_init)
-    TM_kill_by_PID                           0x08000735   Thumb Code    32  lto-llvm-d766e0.o(.text.TM_kill_by_PID)
-    [Anonymous Symbol]                       0x08000734   Section        0  lto-llvm-d766e0.o(.text.TM_kill_by_PID)
-    TM_run                                   0x08000755   Thumb Code   230  lto-llvm-d766e0.o(.text.TM_run)
-    [Anonymous Symbol]                       0x08000754   Section        0  lto-llvm-d766e0.o(.text.TM_run)
-    [Anonymous Symbol]                       0x0800083c   Section        0  lto-llvm-d766e0.o(.text.UsageFault_Handler)
-    __NVIC_SetPriority                       0x08000841   Thumb Code    64  lto-llvm-d766e0.o(.text.__NVIC_SetPriority)
-    [Anonymous Symbol]                       0x08000840   Section        0  lto-llvm-d766e0.o(.text.__NVIC_SetPriority)
-    _add                                     0x08000881   Thumb Code    22  lto-llvm-d766e0.o(.text._add)
-    [Anonymous Symbol]                       0x08000880   Section        0  lto-llvm-d766e0.o(.text._add)
-    _delete                                  0x08000899   Thumb Code    22  lto-llvm-d766e0.o(.text._delete)
-    [Anonymous Symbol]                       0x08000898   Section        0  lto-llvm-d766e0.o(.text._delete)
-    _get_pos_to_add                          0x080008b1   Thumb Code    70  lto-llvm-d766e0.o(.text._get_pos_to_add)
-    [Anonymous Symbol]                       0x080008b0   Section        0  lto-llvm-d766e0.o(.text._get_pos_to_add)
-    get_systime                              0x080008f9   Thumb Code    12  lto-llvm-d766e0.o(.text.get_systime)
-    [Anonymous Symbol]                       0x080008f8   Section        0  lto-llvm-d766e0.o(.text.get_systime)
-    led_cycle                                0x08000905   Thumb Code    28  lto-llvm-d766e0.o(.text.led_cycle)
-    [Anonymous Symbol]                       0x08000904   Section        0  lto-llvm-d766e0.o(.text.led_cycle)
-    led_init                                 0x08000921   Thumb Code    38  lto-llvm-d766e0.o(.text.led_init)
-    [Anonymous Symbol]                       0x08000920   Section        0  lto-llvm-d766e0.o(.text.led_init)
-    [Anonymous Symbol]                       0x08000948   Section        0  lto-llvm-d766e0.o(.text.main)
-    next_Led                                 0x08000981   Thumb Code    82  lto-llvm-d766e0.o(.text.next_Led)
-    [Anonymous Symbol]                       0x08000980   Section        0  lto-llvm-d766e0.o(.text.next_Led)
-    update_systime                           0x080009d5   Thumb Code    16  lto-llvm-d766e0.o(.text.update_systime)
-    [Anonymous Symbol]                       0x080009d4   Section        0  lto-llvm-d766e0.o(.text.update_systime)
+    [Anonymous Symbol]                       0x0800028c   Section        0  lto-llvm-5dad67.o(.text.BusFault_Handler)
+    [Anonymous Symbol]                       0x08000290   Section        0  lto-llvm-5dad67.o(.text.DebugMon_Handler)
+    GPIO_Init                                0x08000295   Thumb Code   408  lto-llvm-5dad67.o(.text.GPIO_Init)
+    [Anonymous Symbol]                       0x08000294   Section        0  lto-llvm-5dad67.o(.text.GPIO_Init)
+    GPIO_ResetBits                           0x0800042d   Thumb Code    28  lto-llvm-5dad67.o(.text.GPIO_ResetBits)
+    [Anonymous Symbol]                       0x0800042c   Section        0  lto-llvm-5dad67.o(.text.GPIO_ResetBits)
+    GPIO_SetBits                             0x08000449   Thumb Code    28  lto-llvm-5dad67.o(.text.GPIO_SetBits)
+    [Anonymous Symbol]                       0x08000448   Section        0  lto-llvm-5dad67.o(.text.GPIO_SetBits)
+    [Anonymous Symbol]                       0x08000464   Section        0  lto-llvm-5dad67.o(.text.HardFault_Handler)
+    [Anonymous Symbol]                       0x08000468   Section        0  lto-llvm-5dad67.o(.text.MemManage_Handler)
+    [Anonymous Symbol]                       0x0800046c   Section        0  lto-llvm-5dad67.o(.text.NMI_Handler)
+    [Anonymous Symbol]                       0x08000470   Section        0  lto-llvm-5dad67.o(.text.PendSV_Handler)
+    RCC_APB2PeriphClockCmd                   0x08000475   Thumb Code    58  lto-llvm-5dad67.o(.text.RCC_APB2PeriphClockCmd)
+    [Anonymous Symbol]                       0x08000474   Section        0  lto-llvm-5dad67.o(.text.RCC_APB2PeriphClockCmd)
+    [Anonymous Symbol]                       0x080004b0   Section        0  lto-llvm-5dad67.o(.text.SVC_Handler)
+    SetSysClock                              0x080004b5   Thumb Code     8  lto-llvm-5dad67.o(.text.SetSysClock)
+    [Anonymous Symbol]                       0x080004b4   Section        0  lto-llvm-5dad67.o(.text.SetSysClock)
+    SetSysClockTo72                          0x080004bd   Thumb Code   364  lto-llvm-5dad67.o(.text.SetSysClockTo72)
+    [Anonymous Symbol]                       0x080004bc   Section        0  lto-llvm-5dad67.o(.text.SetSysClockTo72)
+    SysTick_Config                           0x08000629   Thumb Code    82  lto-llvm-5dad67.o(.text.SysTick_Config)
+    [Anonymous Symbol]                       0x08000628   Section        0  lto-llvm-5dad67.o(.text.SysTick_Config)
+    [Anonymous Symbol]                       0x0800067c   Section        0  lto-llvm-5dad67.o(.text.SysTick_Handler)
+    [Anonymous Symbol]                       0x08000684   Section        0  lto-llvm-5dad67.o(.text.SystemInit)
+    TM_add_task                              0x08000701   Thumb Code    76  lto-llvm-5dad67.o(.text.TM_add_task)
+    [Anonymous Symbol]                       0x08000700   Section        0  lto-llvm-5dad67.o(.text.TM_add_task)
+    TM_init                                  0x0800074d   Thumb Code     8  lto-llvm-5dad67.o(.text.TM_init)
+    [Anonymous Symbol]                       0x0800074c   Section        0  lto-llvm-5dad67.o(.text.TM_init)
+    TM_kill_by_PID                           0x08000755   Thumb Code    32  lto-llvm-5dad67.o(.text.TM_kill_by_PID)
+    [Anonymous Symbol]                       0x08000754   Section        0  lto-llvm-5dad67.o(.text.TM_kill_by_PID)
+    TM_run                                   0x08000775   Thumb Code   230  lto-llvm-5dad67.o(.text.TM_run)
+    [Anonymous Symbol]                       0x08000774   Section        0  lto-llvm-5dad67.o(.text.TM_run)
+    [Anonymous Symbol]                       0x0800085c   Section        0  lto-llvm-5dad67.o(.text.UsageFault_Handler)
+    __NVIC_SetPriority                       0x08000861   Thumb Code    64  lto-llvm-5dad67.o(.text.__NVIC_SetPriority)
+    [Anonymous Symbol]                       0x08000860   Section        0  lto-llvm-5dad67.o(.text.__NVIC_SetPriority)
+    _add                                     0x080008a1   Thumb Code    22  lto-llvm-5dad67.o(.text._add)
+    [Anonymous Symbol]                       0x080008a0   Section        0  lto-llvm-5dad67.o(.text._add)
+    _delete                                  0x080008b9   Thumb Code    22  lto-llvm-5dad67.o(.text._delete)
+    [Anonymous Symbol]                       0x080008b8   Section        0  lto-llvm-5dad67.o(.text._delete)
+    _get_pos_to_add                          0x080008d1   Thumb Code    70  lto-llvm-5dad67.o(.text._get_pos_to_add)
+    [Anonymous Symbol]                       0x080008d0   Section        0  lto-llvm-5dad67.o(.text._get_pos_to_add)
+    get_systime                              0x08000919   Thumb Code    12  lto-llvm-5dad67.o(.text.get_systime)
+    [Anonymous Symbol]                       0x08000918   Section        0  lto-llvm-5dad67.o(.text.get_systime)
+    led_cycle                                0x08000925   Thumb Code    28  lto-llvm-5dad67.o(.text.led_cycle)
+    [Anonymous Symbol]                       0x08000924   Section        0  lto-llvm-5dad67.o(.text.led_cycle)
+    led_init                                 0x08000941   Thumb Code    38  lto-llvm-5dad67.o(.text.led_init)
+    [Anonymous Symbol]                       0x08000940   Section        0  lto-llvm-5dad67.o(.text.led_init)
+    [Anonymous Symbol]                       0x08000968   Section        0  lto-llvm-5dad67.o(.text.main)
+    next_Led                                 0x080009a5   Thumb Code    82  lto-llvm-5dad67.o(.text.next_Led)
+    [Anonymous Symbol]                       0x080009a4   Section        0  lto-llvm-5dad67.o(.text.next_Led)
+    update_systime                           0x080009f9   Thumb Code    16  lto-llvm-5dad67.o(.text.update_systime)
+    [Anonymous Symbol]                       0x080009f8   Section        0  lto-llvm-5dad67.o(.text.update_systime)
     .bss                                     0x20000000   Section       96  libspace.o(.bss)
-    TM_run.systime_old                       0x20000060   Data           4  lto-llvm-d766e0.o(.bss.TM_run.systime_old)
-    [Anonymous Symbol]                       0x20000060   Section        0  lto-llvm-d766e0.o(.bss.TM_run.systime_old)
-    led_cycle.led_state                      0x20000064   Data           4  lto-llvm-d766e0.o(.bss.led_cycle.led_state)
-    [Anonymous Symbol]                       0x20000064   Section        0  lto-llvm-d766e0.o(.bss.led_cycle.led_state)
-    systime                                  0x20000068   Data           4  lto-llvm-d766e0.o(.bss.systime)
-    [Anonymous Symbol]                       0x20000068   Section        0  lto-llvm-d766e0.o(.bss.systime)
-    task_list                                0x2000006c   Data          40  lto-llvm-d766e0.o(.bss.task_list)
-    [Anonymous Symbol]                       0x2000006c   Section        0  lto-llvm-d766e0.o(.bss.task_list)
-    task_list_state                          0x20000094   Data          10  lto-llvm-d766e0.o(.bss.task_list_state)
-    [Anonymous Symbol]                       0x20000094   Section        0  lto-llvm-d766e0.o(.bss.task_list_state)
+    TM_run.systime_old                       0x20000060   Data           4  lto-llvm-5dad67.o(.bss.TM_run.systime_old)
+    [Anonymous Symbol]                       0x20000060   Section        0  lto-llvm-5dad67.o(.bss.TM_run.systime_old)
+    led_cycle.led_state                      0x20000064   Data           4  lto-llvm-5dad67.o(.bss.led_cycle.led_state)
+    [Anonymous Symbol]                       0x20000064   Section        0  lto-llvm-5dad67.o(.bss.led_cycle.led_state)
+    systime                                  0x20000068   Data           4  lto-llvm-5dad67.o(.bss.systime)
+    [Anonymous Symbol]                       0x20000068   Section        0  lto-llvm-5dad67.o(.bss.systime)
+    task_list                                0x2000006c   Data          40  lto-llvm-5dad67.o(.bss.task_list)
+    [Anonymous Symbol]                       0x2000006c   Section        0  lto-llvm-5dad67.o(.bss.task_list)
+    task_list_state                          0x20000094   Data          10  lto-llvm-5dad67.o(.bss.task_list_state)
+    [Anonymous Symbol]                       0x20000094   Section        0  lto-llvm-5dad67.o(.bss.task_list_state)
     Heap_Mem                                 0x200000a0   Data         512  startup_stm32f10x_cl.o(HEAP)
     HEAP                                     0x200000a0   Section      512  startup_stm32f10x_cl.o(HEAP)
     Stack_Mem                                0x200002a0   Data        1024  startup_stm32f10x_cl.o(STACK)
@@ -575,19 +575,19 @@ Image Symbol Table
     __I$use$semihosting                      0x08000289   Thumb Code     0  use_no_semi.o(.text)
     __use_no_semihosting_swi                 0x08000289   Thumb Code     2  use_no_semi.o(.text)
     __semihosting_library_function           0x0800028b   Thumb Code     0  indicate_semi.o(.text)
-    BusFault_Handler                         0x0800028d   Thumb Code     4  lto-llvm-d766e0.o(.text.BusFault_Handler)
-    DebugMon_Handler                         0x08000291   Thumb Code     2  lto-llvm-d766e0.o(.text.DebugMon_Handler)
-    HardFault_Handler                        0x08000465   Thumb Code     4  lto-llvm-d766e0.o(.text.HardFault_Handler)
-    MemManage_Handler                        0x08000469   Thumb Code     4  lto-llvm-d766e0.o(.text.MemManage_Handler)
-    NMI_Handler                              0x0800046d   Thumb Code     2  lto-llvm-d766e0.o(.text.NMI_Handler)
-    PendSV_Handler                           0x08000471   Thumb Code     2  lto-llvm-d766e0.o(.text.PendSV_Handler)
-    SVC_Handler                              0x080004b1   Thumb Code     2  lto-llvm-d766e0.o(.text.SVC_Handler)
-    SysTick_Handler                          0x0800067d   Thumb Code     8  lto-llvm-d766e0.o(.text.SysTick_Handler)
-    SystemInit                               0x08000685   Thumb Code   122  lto-llvm-d766e0.o(.text.SystemInit)
-    UsageFault_Handler                       0x0800083d   Thumb Code     4  lto-llvm-d766e0.o(.text.UsageFault_Handler)
-    main                                     0x08000949   Thumb Code    56  lto-llvm-d766e0.o(.text.main)
-    Region$$Table$$Base                      0x080009e4   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x080009f4   Number         0  anon$$obj.o(Region$$Table)
+    BusFault_Handler                         0x0800028d   Thumb Code     4  lto-llvm-5dad67.o(.text.BusFault_Handler)
+    DebugMon_Handler                         0x08000291   Thumb Code     2  lto-llvm-5dad67.o(.text.DebugMon_Handler)
+    HardFault_Handler                        0x08000465   Thumb Code     4  lto-llvm-5dad67.o(.text.HardFault_Handler)
+    MemManage_Handler                        0x08000469   Thumb Code     4  lto-llvm-5dad67.o(.text.MemManage_Handler)
+    NMI_Handler                              0x0800046d   Thumb Code     2  lto-llvm-5dad67.o(.text.NMI_Handler)
+    PendSV_Handler                           0x08000471   Thumb Code     2  lto-llvm-5dad67.o(.text.PendSV_Handler)
+    SVC_Handler                              0x080004b1   Thumb Code     2  lto-llvm-5dad67.o(.text.SVC_Handler)
+    SysTick_Handler                          0x0800067d   Thumb Code     8  lto-llvm-5dad67.o(.text.SysTick_Handler)
+    SystemInit                               0x08000685   Thumb Code   122  lto-llvm-5dad67.o(.text.SystemInit)
+    UsageFault_Handler                       0x0800085d   Thumb Code     4  lto-llvm-5dad67.o(.text.UsageFault_Handler)
+    main                                     0x08000969   Thumb Code    60  lto-llvm-5dad67.o(.text.main)
+    Region$$Table$$Base                      0x08000a08   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x08000a18   Number         0  anon$$obj.o(Region$$Table)
     __libspace_start                         0x20000000   Data          96  libspace.o(.bss)
     __temporary_stack_top$libspace           0x20000060   Data           0  libspace.o(.bss)
 
@@ -599,9 +599,9 @@ Memory Map of the image
 
   Image Entry point : 0x08000151
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x000009f4, Max: 0x00040000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00000a18, Max: 0x00040000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x000009f4, Max: 0x00040000, ABSOLUTE)
+    Execution Region ER_IROM1 (Base: 0x08000000, Size: 0x00000a18, Max: 0x00040000, ABSOLUTE)
 
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -661,51 +661,51 @@ Memory Map of the image
     0x08000288   0x00000002   Code   RO          148    .text               c_wu.l(use_no_semi.o)
     0x0800028a   0x00000000   Code   RO          150    .text               c_wu.l(indicate_semi.o)
     0x0800028a   0x00000002   PAD
-    0x0800028c   0x00000004   Code   RO          250    .text.BusFault_Handler  lto-llvm-d766e0.o
-    0x08000290   0x00000002   Code   RO          256    .text.DebugMon_Handler  lto-llvm-d766e0.o
+    0x0800028c   0x00000004   Code   RO          250    .text.BusFault_Handler  lto-llvm-5dad67.o
+    0x08000290   0x00000002   Code   RO          256    .text.DebugMon_Handler  lto-llvm-5dad67.o
     0x08000292   0x00000002   PAD
-    0x08000294   0x00000198   Code   RO          206    .text.GPIO_Init     lto-llvm-d766e0.o
-    0x0800042c   0x0000001c   Code   RO          210    .text.GPIO_ResetBits  lto-llvm-d766e0.o
-    0x08000448   0x0000001c   Code   RO          208    .text.GPIO_SetBits  lto-llvm-d766e0.o
-    0x08000464   0x00000004   Code   RO          246    .text.HardFault_Handler  lto-llvm-d766e0.o
-    0x08000468   0x00000004   Code   RO          248    .text.MemManage_Handler  lto-llvm-d766e0.o
-    0x0800046c   0x00000002   Code   RO          244    .text.NMI_Handler   lto-llvm-d766e0.o
+    0x08000294   0x00000198   Code   RO          206    .text.GPIO_Init     lto-llvm-5dad67.o
+    0x0800042c   0x0000001c   Code   RO          210    .text.GPIO_ResetBits  lto-llvm-5dad67.o
+    0x08000448   0x0000001c   Code   RO          208    .text.GPIO_SetBits  lto-llvm-5dad67.o
+    0x08000464   0x00000004   Code   RO          246    .text.HardFault_Handler  lto-llvm-5dad67.o
+    0x08000468   0x00000004   Code   RO          248    .text.MemManage_Handler  lto-llvm-5dad67.o
+    0x0800046c   0x00000002   Code   RO          244    .text.NMI_Handler   lto-llvm-5dad67.o
     0x0800046e   0x00000002   PAD
-    0x08000470   0x00000002   Code   RO          258    .text.PendSV_Handler  lto-llvm-d766e0.o
+    0x08000470   0x00000002   Code   RO          258    .text.PendSV_Handler  lto-llvm-5dad67.o
     0x08000472   0x00000002   PAD
-    0x08000474   0x0000003a   Code   RO          212    .text.RCC_APB2PeriphClockCmd  lto-llvm-d766e0.o
+    0x08000474   0x0000003a   Code   RO          212    .text.RCC_APB2PeriphClockCmd  lto-llvm-5dad67.o
     0x080004ae   0x00000002   PAD
-    0x080004b0   0x00000002   Code   RO          254    .text.SVC_Handler   lto-llvm-d766e0.o
+    0x080004b0   0x00000002   Code   RO          254    .text.SVC_Handler   lto-llvm-5dad67.o
     0x080004b2   0x00000002   PAD
-    0x080004b4   0x00000008   Code   RO          264    .text.SetSysClock   lto-llvm-d766e0.o
-    0x080004bc   0x0000016c   Code   RO          266    .text.SetSysClockTo72  lto-llvm-d766e0.o
-    0x08000628   0x00000052   Code   RO          226    .text.SysTick_Config  lto-llvm-d766e0.o
+    0x080004b4   0x00000008   Code   RO          264    .text.SetSysClock   lto-llvm-5dad67.o
+    0x080004bc   0x0000016c   Code   RO          266    .text.SetSysClockTo72  lto-llvm-5dad67.o
+    0x08000628   0x00000052   Code   RO          226    .text.SysTick_Config  lto-llvm-5dad67.o
     0x0800067a   0x00000002   PAD
-    0x0800067c   0x00000008   Code   RO          260    .text.SysTick_Handler  lto-llvm-d766e0.o
-    0x08000684   0x0000007a   Code   RO          262    .text.SystemInit    lto-llvm-d766e0.o
+    0x0800067c   0x00000008   Code   RO          260    .text.SysTick_Handler  lto-llvm-5dad67.o
+    0x08000684   0x0000007a   Code   RO          262    .text.SystemInit    lto-llvm-5dad67.o
     0x080006fe   0x00000002   PAD
-    0x08000700   0x0000002c   Code   RO          230    .text.TM_add_task   lto-llvm-d766e0.o
-    0x0800072c   0x00000008   Code   RO          224    .text.TM_init       lto-llvm-d766e0.o
-    0x08000734   0x00000020   Code   RO          232    .text.TM_kill_by_PID  lto-llvm-d766e0.o
-    0x08000754   0x000000e6   Code   RO          234    .text.TM_run        lto-llvm-d766e0.o
-    0x0800083a   0x00000002   PAD
-    0x0800083c   0x00000004   Code   RO          252    .text.UsageFault_Handler  lto-llvm-d766e0.o
-    0x08000840   0x00000040   Code   RO          228    .text.__NVIC_SetPriority  lto-llvm-d766e0.o
-    0x08000880   0x00000016   Code   RO          222    .text._add          lto-llvm-d766e0.o
-    0x08000896   0x00000002   PAD
-    0x08000898   0x00000016   Code   RO          220    .text._delete       lto-llvm-d766e0.o
-    0x080008ae   0x00000002   PAD
-    0x080008b0   0x00000046   Code   RO          218    .text._get_pos_to_add  lto-llvm-d766e0.o
-    0x080008f6   0x00000002   PAD
-    0x080008f8   0x0000000c   Code   RO          214    .text.get_systime   lto-llvm-d766e0.o
-    0x08000904   0x0000001c   Code   RO          240    .text.led_cycle     lto-llvm-d766e0.o
-    0x08000920   0x00000026   Code   RO          236    .text.led_init      lto-llvm-d766e0.o
-    0x08000946   0x00000002   PAD
-    0x08000948   0x00000038   Code   RO          242    .text.main          lto-llvm-d766e0.o
-    0x08000980   0x00000052   Code   RO          238    .text.next_Led      lto-llvm-d766e0.o
-    0x080009d2   0x00000002   PAD
-    0x080009d4   0x00000010   Code   RO          216    .text.update_systime  lto-llvm-d766e0.o
-    0x080009e4   0x00000010   Data   RO          281    Region$$Table       anon$$obj.o
+    0x08000700   0x0000004c   Code   RO          230    .text.TM_add_task   lto-llvm-5dad67.o
+    0x0800074c   0x00000008   Code   RO          224    .text.TM_init       lto-llvm-5dad67.o
+    0x08000754   0x00000020   Code   RO          232    .text.TM_kill_by_PID  lto-llvm-5dad67.o
+    0x08000774   0x000000e6   Code   RO          234    .text.TM_run        lto-llvm-5dad67.o
+    0x0800085a   0x00000002   PAD
+    0x0800085c   0x00000004   Code   RO          252    .text.UsageFault_Handler  lto-llvm-5dad67.o
+    0x08000860   0x00000040   Code   RO          228    .text.__NVIC_SetPriority  lto-llvm-5dad67.o
+    0x080008a0   0x00000016   Code   RO          222    .text._add          lto-llvm-5dad67.o
+    0x080008b6   0x00000002   PAD
+    0x080008b8   0x00000016   Code   RO          220    .text._delete       lto-llvm-5dad67.o
+    0x080008ce   0x00000002   PAD
+    0x080008d0   0x00000046   Code   RO          218    .text._get_pos_to_add  lto-llvm-5dad67.o
+    0x08000916   0x00000002   PAD
+    0x08000918   0x0000000c   Code   RO          214    .text.get_systime   lto-llvm-5dad67.o
+    0x08000924   0x0000001c   Code   RO          240    .text.led_cycle     lto-llvm-5dad67.o
+    0x08000940   0x00000026   Code   RO          236    .text.led_init      lto-llvm-5dad67.o
+    0x08000966   0x00000002   PAD
+    0x08000968   0x0000003c   Code   RO          242    .text.main          lto-llvm-5dad67.o
+    0x080009a4   0x00000052   Code   RO          238    .text.next_Led      lto-llvm-5dad67.o
+    0x080009f6   0x00000002   PAD
+    0x080009f8   0x00000010   Code   RO          216    .text.update_systime  lto-llvm-5dad67.o
+    0x08000a08   0x00000010   Data   RO          281    Region$$Table       anon$$obj.o
 
 
     Execution Region RW_IRAM1 (Base: 0x20000000, Size: 0x000006a0, Max: 0x00010000, ABSOLUTE)
@@ -713,11 +713,11 @@ Memory Map of the image
     Base Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x20000000   0x00000060   Zero   RW           73    .bss                c_wu.l(libspace.o)
-    0x20000060   0x00000004   Zero   RW          271    .bss.TM_run.systime_old  lto-llvm-d766e0.o
-    0x20000064   0x00000004   Zero   RW          272    .bss.led_cycle.led_state  lto-llvm-d766e0.o
-    0x20000068   0x00000004   Zero   RW          268    .bss.systime        lto-llvm-d766e0.o
-    0x2000006c   0x00000028   Zero   RW          270    .bss.task_list      lto-llvm-d766e0.o
-    0x20000094   0x0000000a   Zero   RW          269    .bss.task_list_state  lto-llvm-d766e0.o
+    0x20000060   0x00000004   Zero   RW          271    .bss.TM_run.systime_old  lto-llvm-5dad67.o
+    0x20000064   0x00000004   Zero   RW          272    .bss.led_cycle.led_state  lto-llvm-5dad67.o
+    0x20000068   0x00000004   Zero   RW          268    .bss.systime        lto-llvm-5dad67.o
+    0x2000006c   0x00000028   Zero   RW          270    .bss.task_list      lto-llvm-5dad67.o
+    0x20000094   0x0000000a   Zero   RW          269    .bss.task_list_state  lto-llvm-5dad67.o
     0x2000009e   0x00000002   PAD
     0x200000a0   0x00000200   Zero   RW           32    HEAP                startup_stm32f10x_cl.o
     0x200002a0   0x00000400   Zero   RW           31    STACK               startup_stm32f10x_cl.o
@@ -730,11 +730,11 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-      1854          4          0          0         62      25687   lto-llvm-d766e0.o
+      1890          4          0          0         62      25716   lto-llvm-5dad67.o
         64         26        336          0       1536        884   startup_stm32f10x_cl.o
 
     ----------------------------------------------------------------------
-      1944         30        352          0       1600      26571   Object Totals
+      1980         30        352          0       1600      26600   Object Totals
          0          0         16          0          0          0   (incl. Generated)
         26          0          0          0          2          0   (incl. Padding)
 
@@ -782,15 +782,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      2196         46        352          0       1696      26979   Grand Totals
-      2196         46        352          0       1696      26979   ELF Image Totals
-      2196         46        352          0          0          0   ROM Totals
+      2232         46        352          0       1696      27008   Grand Totals
+      2232         46        352          0       1696      27008   ELF Image Totals
+      2232         46        352          0          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                 2548 (   2.49kB)
+    Total RO  Size (Code + RO Data)                 2584 (   2.52kB)
     Total RW  Size (RW Data + ZI Data)              1696 (   1.66kB)
-    Total ROM Size (Code + RO Data + RW Data)       2548 (   2.49kB)
+    Total ROM Size (Code + RO Data + RW Data)       2584 (   2.52kB)
 
 ==============================================================================
 

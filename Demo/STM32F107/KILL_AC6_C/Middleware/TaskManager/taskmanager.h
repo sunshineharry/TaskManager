@@ -11,8 +11,8 @@ extern "C"
 
 // 宏定义
 #define RUN_FOREVER 0xFFFFFFFF
-#define START_NOW   (get_systime()+1)
-
+#define START_NOW   (get_systime()+SYS_CYCLE_TIME)
+#define PID_INIT    0
 
 typedef struct s_tasks_msg
 {
