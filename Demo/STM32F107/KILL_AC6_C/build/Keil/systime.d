@@ -1,5 +1,6 @@
 ./build/keil/systime.o: Middleware\TaskManager\systime.c \
-  Middleware\TaskManager\systime.h user\inc\stm32f10x_conf.h \
+  Middleware\TaskManager\systime.h \
+  Middleware\TaskManager\TaskManager_config.h user\inc\stm32f10x_conf.h \
   Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_adc.h \
   Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\stm32f10x.h \
   Libraries\CMSIS\CM3\CoreSupport\core_cm3.h \

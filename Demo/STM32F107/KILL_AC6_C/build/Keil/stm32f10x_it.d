@@ -33,4 +33,5 @@
   Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h \
   Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h \
   Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h \
-  Middleware\TaskManager\systime.h
+  Middleware\TaskManager\systime.h \
+  Middleware\TaskManager\TaskManager_config.h
