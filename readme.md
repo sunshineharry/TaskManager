@@ -57,29 +57,29 @@
 // 任务1
 void task1(void)
 {
-	printf("task1!\n");
+    printf("task1!\n");
 }
 
 // 任务2
 void task2(void)
 {
-	printf("task2!\n");
+    printf("task2!\n");
 }
 
 void main(void)
 {
-	TM_init();
+    TM_init();
     // 任务1立即启动，每2ms中运行一次，无休无止的运行
-	TaskMsg tasks_msg1 = { task1,START_NOW,2,RUN_FOREVER,0 };
-	TM_add_task(&tasks_msg1);
+    TaskMsg tasks_msg1 = { task1,START_NOW,2,RUN_FOREVER,0 };
+    TM_add_task(&tasks_msg1);
     // 任务2在1ms之后启动，每4ms运行一次，运行5次自动结束
-	TaskMsg tasks_msg2 = { task2,1,4,5,0 };
-	TM_add_task(&tasks_msg2);
-	while (1)
-	{
-		// 任务管理器启动
+    TaskMsg tasks_msg2 = { task2,1,4,5,0 };
+    TM_add_task(&tasks_msg2);
+    while (1)
+    {
+        // 任务管理器启动
         TM_run();
-	}
+    }
 }
 ```
 
