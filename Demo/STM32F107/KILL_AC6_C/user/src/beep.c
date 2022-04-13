@@ -14,15 +14,15 @@ void beep_init(void)
 void beep_cycle()
 {
     static uint32_t beep_state = 0;
-    if (beep_state)
+    if (!beep_state)
     {
         BeepOn;
-        beep_state = 0;
+        beep_state = 1;
     }
     else
     {
         BeepOff;
-        beep_state = 1;
+        beep_state = 0;
     }
         
 }
