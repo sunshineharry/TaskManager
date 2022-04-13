@@ -41,7 +41,7 @@ void next_Led(uint32_t LED_num)
 
 void led_cycle(void)
 {
-    static uint32_t led_state = 0;
+    static uint32_t led_state = 1;
     next_Led(led_state);
     led_state = (led_state+1)%4;
 }

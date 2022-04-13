@@ -1273,3 +1273,71 @@ uint32_t get_systime()
 [2022-04-12 17:40:34]	[done]
 	build successfully !
 
+[2022-04-12 17:55:07]	link failed !, exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x01a98] in <82200d7cd0cf4a279c5fb9fc299a656f>:0 
+---
+Error: L6218E: Undefined symbol get_systime (referred from main.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 1 error messages.
+
+
+[2022-04-12 17:55:40]	[done]
+	build successfully !
+
+[2022-04-13 17:59:21]	[done]
+	build successfully !
+
+[2022-04-13 18:00:05]	[done]
+	build successfully !
+
+[2022-04-13 18:03:50]	[done]
+	build successfully !
+
+[2022-04-13 18:04:31]	[done]
+	build successfully !
+
+[2022-04-13 18:05:07]	[done]
+	build successfully !
+
+[2022-04-13 18:12:11]	[done]
+	build successfully !
+
+[2022-04-13 18:14:27]	[done]
+	build successfully !
+
+[2022-04-13 18:15:26]	[done]
+	build successfully !
+
+[2022-04-13 18:18:28]	[done]
+	build successfully !
+
+[2022-04-13 18:19:40]	[done]
+	build successfully !
+
+[2022-04-13 18:21:02]	[done]
+	build successfully !
+
+[2022-04-13 18:22:16]	[done]
+	build successfully !
+
+[2022-04-13 18:23:18]	[done]
+	build successfully !
+
+[2022-04-13 18:23:58]	[done]
+	build successfully !
+
+[2022-04-13 18:25:40]	[done]
+	build successfully !
+
+[2022-04-13 18:28:56]	[done]
+	build successfully !
+
+[2022-04-13 18:39:22]	[done]
+	build successfully !
+
+[2022-04-13 18:40:33]	[done]
+	build successfully !
+
+[2022-04-13 18:41:07]	[done]
+	build successfully !
+

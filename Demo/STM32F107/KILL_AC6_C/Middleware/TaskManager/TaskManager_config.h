@@ -7,7 +7,7 @@ extern "C"
 #endif
 
 #define MAX_TASK_NUM     10         // 最大任务数量
-#define SYS_CYCLE_TIME   10         // 系统循环时间，单位为 ms
+#define SYS_CYCLE_TIME   2          // 系统循环时间，单位为 ms
 #define ARM_KILL
 
 // 跨平台移植，处理编译器
