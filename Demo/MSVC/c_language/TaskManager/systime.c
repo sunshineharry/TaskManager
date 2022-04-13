@@ -1,14 +1,14 @@
 #include "systime.h"
 
 
-uint32_t systime = 0;
+uint32_t systick = 0;
 
 #ifdef WIN_MSVC
 uint32_t start_time = 0;
 #endif
 
-// get_systime() 在不同环境下的实现
-uint32_t get_systime()
+// get_systick() 在不同环境下的实现
+uint32_t get_systick()
 {
     #ifdef WIN_MSVC
         SYSTEMTIME sys;
@@ -18,12 +18,16 @@ uint32_t get_systime()
         return (sys.wMinute * 60) + (sys.wSecond) - start_time;
     #endif
     #ifdef ARM_KILL
-        return systime;
+        return systick;
     #endif
-    }
+}
 
+uint32_t get_systime()
+{
+    return get_systick()*SYS_CYCLE_TIME;
+}
 
 void update_systime(void)
 {
-    systime = systime+1;
+    systick = systick+1;
 }

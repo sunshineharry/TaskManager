@@ -8,6 +8,7 @@ extern "C"
 #include "TaskManager_config.h"
 
 
+uint32_t get_systick();
 uint32_t get_systime();
 void update_systime(void);
 

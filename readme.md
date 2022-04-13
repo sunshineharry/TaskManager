@@ -42,14 +42,12 @@
 
 
 - `void TM_init()`：系统初始化
-
 - `uint32_t TM_add_task(TaskMsg* new_task_msg)`：添加任务
-
 - `void TM_kill_by_PID(uint32_t PID)`：通过任务序号删除任务
-
 - `void TM_kill_by_taskmsg(TaskMsg* task_msg)`：通过任务信息删除任务
-
 - `void TM_run(void)`：运行系统
+- `TM_is_no_task(void)`：判断系统是否有正在运行的任务
+- `TM_is_task_exixt(uint32_t PID)`：根据PID号判断该任务是否运行
 
 **示例代码1**：
 
@@ -74,7 +72,7 @@ void main(void)
 {
     TM_init();
     // 任务1立即启动，每2ms中运行一次，无休无止的运行
-    TaskMsg tasks_msg1 = { task1,START_NOW,2,RUN_FOREVER,0 };
+    TaskMsg tasks_msg1 = { task1,START_NOW,2,RUN_FOREVER,PID_INIT};
     TM_add_task(&tasks_msg1);
     // 任务2在1ms之后启动，每4ms运行一次，运行5次自动结束
     TaskMsg tasks_msg2 = { task2,1,4,5,0 };
@@ -116,11 +114,11 @@ void task2(void)
 void main(void)
 {
 	TM_init(1);
-	TaskMsg tasks_msg0 = { task0,START_NOW,1,RUN_FOREVER,0 };
+	TaskMsg tasks_msg0 = { task0,START_NOW,1,RUN_FOREVER,PID_INIT};
 	int PID0 = TM_add_task(&tasks_msg0);
-	TaskMsg tasks_msg1 = { task1,START_NOW,2,RUN_FOREVER,0 };
+	TaskMsg tasks_msg1 = { task1,START_NOW,2,RUN_FOREVER,PID_INIT};
 	int PID1 =  TM_add_task(&tasks_msg1);
-	TaskMsg tasks_msg2 = { task2,START_NOW,4,RUN_FOREVER,0 };
+	TaskMsg tasks_msg2 = { task2,START_NOW,4,RUN_FOREVER,PID_INIT };
 	int PID2 = TM_add_task(&tasks_msg2);
 	while (1)
 	{

@@ -355,7 +355,7 @@
             <uClangAs>0</uClangAs>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>USE_STDPERIPH_DRIVER</Define>
+              <Define>USE_STDPERIPH_DRIVER,STM32F10X_CL</Define>
               <Undefine></Undefine>
               <IncludePath></IncludePath>
             </VariousControls>

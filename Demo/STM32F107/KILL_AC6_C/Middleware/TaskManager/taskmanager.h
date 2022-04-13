@@ -20,10 +20,10 @@ typedef uint8_t boolen;
 
 typedef struct s_tasks_msg
 {
-	void(*task_fun)(void);
-	uint32_t start_time;
-	uint32_t period;
-	uint32_t remain_count;
+    void(*task_fun)(void);
+    uint32_t start_time;
+    uint32_t period;
+    uint32_t remain_count;
     uint32_t PID;
 }TaskMsg;
 

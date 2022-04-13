@@ -10,8 +10,12 @@ extern "C"
 #include "TaskManager_config.h"
 
 // 宏定义
+typedef uint8_t boolen;
 #define RUN_FOREVER 0xFFFFFFFF
-#define START_NOW   (get_systime()+SYS_CYCLE_TIME)
+#define NOW         (get_systime()+SYS_CYCLE_TIME)
+#define PID_INIT    0
+#define True        1
+#define False       0
 
 
 typedef struct s_tasks_msg
@@ -28,6 +32,8 @@ uint32_t TM_add_task(TaskMsg* new_task_msg);
 void TM_kill_by_PID(uint32_t PID);
 void TM_kill_by_taskmsg(TaskMsg* task_msg);
 void TM_run(void);
+boolen TM_is_no_task(void);
+boolen TM_is_task_exixt(uint32_t PID);
 
 
 

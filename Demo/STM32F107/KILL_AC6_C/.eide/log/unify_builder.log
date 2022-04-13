@@ -1353,3 +1353,26 @@ Finished: 1 information, 0 warning and 1 error messages.
 [2022-04-13 18:58:02]	[done]
 	build successfully !
 
+[2022-04-13 19:04:05]	compilation failed at : "c:\Users\Harry\Desktop\TaskManager\Demo\STM32F107\KILL_AC6_C\Middleware\TaskManager\taskmanager.c", exit code: 1
+  at unify_builder.Program.Main (System.String[] args) [0x018f4] in <82200d7cd0cf4a279c5fb9fc299a656f>:0 
+---
+./Middleware/TaskManager/taskmanager.c:18:5: warning: implicit declaration of function '_error_handle' is invalid in C99 [-Wimplicit-function-declaration]
+    _error_handle();
+    ^
+./Middleware/TaskManager/taskmanager.c:19:1: warning: non-void function does not return a value in all control paths [-Wreturn-type]
+}
+^
+./Middleware/TaskManager/taskmanager.c:137:6: error: conflicting types for '_error_handle'
+void _error_handle(void)
+     ^
+./Middleware/TaskManager/taskmanager.c:18:5: note: previous implicit declaration is here
+    _error_handle();
+    ^
+2 warnings and 1 error generated.
+
+[2022-04-13 19:04:32]	[done]
+	build successfully !
+
+[2022-04-13 19:34:40]	[done]
+	build successfully !
+

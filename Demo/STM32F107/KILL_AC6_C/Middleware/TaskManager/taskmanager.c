@@ -4,6 +4,11 @@
 TaskMsg* task_list[MAX_TASK_NUM];
 uint8_t task_list_state[MAX_TASK_NUM];
 
+void _error_handle(void)
+{
+    while (1);
+}
+
 // 在list中找到一个可以添加任务的位置
 uint32_t _get_pos_to_add(void)
 {
@@ -15,6 +20,7 @@ uint32_t _get_pos_to_add(void)
             return PID;
         }
     }
+    _error_handle();
 }
 
 // 从list中删除任务
@@ -131,3 +137,5 @@ void TM_run(void)
         }
     }
 }
+
+

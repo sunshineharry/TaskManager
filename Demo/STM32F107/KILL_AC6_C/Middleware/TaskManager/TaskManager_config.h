@@ -17,8 +17,8 @@ extern "C"
 
 #ifdef WIN_MSVC             // msvc 编译器
     #include <windows.h>
-	typedef int uint32_t;
-	typedef int uint8_t;
+    typedef int uint32_t;
+    typedef int uint8_t;
 #endif
 
 

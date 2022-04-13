@@ -14,7 +14,7 @@ uint32_t get_systick()
         SYSTEMTIME sys;
         GetLocalTime(&sys);
         if (start_time==0)
-			start_time = (sys.wMinute * 60) + (sys.wSecond);
+            start_time = (sys.wMinute * 60) + (sys.wSecond);
         return (sys.wMinute * 60) + (sys.wSecond) - start_time;
     #endif
     #ifdef ARM_KILL
