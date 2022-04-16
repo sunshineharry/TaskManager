@@ -34,7 +34,7 @@
 
     > **任务函数**：只能是无参数，无返回值的函数，**不能是阻塞函数**
     >
-    > **开始时间**：任务开始运行的时间，`START_NOW` 表示立即开始运行
+    > **开始时间**：任务开始运行的时间，`NOW` 表示立即开始运行
     >
     > **周期时间**：任务每`周期时间`运行一次
     >
@@ -74,7 +74,7 @@ void main(void)
 {
     TM_init();
     // 任务1立即启动，每2ms中运行一次，无休无止的运行
-    TaskMsg tasks_msg1 = { task1,START_NOW,2,RUN_FOREVER,PID_INIT};
+    TaskMsg tasks_msg1 = { task1,NOW,2,RUN_FOREVER,PID_INIT};
     TM_add_task(&tasks_msg1);
     // 任务2在1ms之后启动，每4ms运行一次，运行5次自动结束
     TaskMsg tasks_msg2 = { task2,1,4,5,0 };
@@ -116,11 +116,11 @@ void task2(void)
 void main(void)
 {
 	TM_init(1);
-	TaskMsg tasks_msg0 = { task0,START_NOW,1,RUN_FOREVER,PID_INIT};
+	TaskMsg tasks_msg0 = { task0,NOW,1,RUN_FOREVER,PID_INIT};
 	int PID0 = TM_add_task(&tasks_msg0);
-	TaskMsg tasks_msg1 = { task1,START_NOW,2,RUN_FOREVER,PID_INIT};
+	TaskMsg tasks_msg1 = { task1,NOW,2,RUN_FOREVER,PID_INIT};
 	int PID1 =  TM_add_task(&tasks_msg1);
-	TaskMsg tasks_msg2 = { task2,START_NOW,4,RUN_FOREVER,PID_INIT };
+	TaskMsg tasks_msg2 = { task2,NOW,4,RUN_FOREVER,PID_INIT };
 	int PID2 = TM_add_task(&tasks_msg2);
 	while (1)
 	{
